@@ -1,0 +1,780 @@
+<!DOCTYPE html><html lang="en" style=""><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"><meta content="mobile_tab" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "secondary-fixed": "#ffe088", "on-tertiary-container": "#f1794e", "surface-bright": "#fcf9f4", "surface-container-lowest": "#ffffff", "on-surface-variant": "#534343", "surface-container-high": "#ebe8e3", "on-error-container": "#93000a", "on-primary": "#ffffff", "background": "#fcf9f4", "inverse-surface": "#31302d", "outline": "#867273", "primary-fixed": "#ffdada", "on-secondary-fixed": "#241a00", "primary-fixed-dim": "#ffb3b6", "inverse-primary": "#ffb3b6", "surface": "#fcf9f4", "on-primary-container": "#db8287", "surface-container-low": "#f6f3ee", "tertiary-container": "#611b00", "surface-container": "#f0ede9", "on-tertiary-fixed": "#390c00", "inverse-on-surface": "#f3f0eb", "on-primary-fixed": "#3d050e", "outline-variant": "#d9c1c1", "primary": "#400710", "error-container": "#ffdad6", "on-secondary-fixed-variant": "#574500", "surface-dim": "#dcdad5", "secondary-fixed-dim": "#e9c349", "error": "#ba1a1a", "secondary-container": "#fed65b", "on-surface": "#1c1c19", "on-tertiary": "#ffffff", "on-background": "#1c1c19", "primary-container": "#5c1d24", "secondary": "#735c00", "on-secondary": "#ffffff", "on-primary-fixed-variant": "#753137", "on-tertiary-fixed-variant": "#822801", "tertiary-fixed": "#ffdbcf", "on-error": "#ffffff", "surface-container-highest": "#e5e2dd", "surface-tint": "#93474d", "surface-variant": "#e5e2dd", "on-secondary-container": "#745c00", "tertiary": "#3d0e00", "tertiary-fixed-dim": "#ffb59c" }, borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, spacing: { "margin-desktop": "3rem", "gutter": "1rem", "space-xl": "2.5rem", "space-xs": "0.25rem", "space-md": "1rem", "margin-tablet": "1.5rem", "space-sm": "0.5rem", "space-lg": "1.5rem", "gutter-desktop": "1.5rem", "margin": "1rem" }, fontFamily: { "label-sm": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Playfair Display"], "body-lg": ["Plus Jakarta Sans"], "headline-xl": ["Playfair Display"], "label-md": ["Plus Jakarta Sans"], "headline-sm": ["Playfair Display"], "headline-lg": ["Playfair Display"], "headline-md": ["Playfair Display"], "headline-xl-mobile": ["Playfair Display"], "body-sm": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"] }, fontSize: { "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "700" }], "headline-lg-mobile": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }], "headline-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.06em", "fontWeight": "600" }], "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "500" }], "headline-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }], "headline-xl-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.04em", "fontWeight": "600" }], "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }] } } } }</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#fcf9f4;color:#1c1c19;}body{overscroll-behavior:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style></head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/90 backdrop-blur-xl shadow-[0_4px_20px_rgba(92,29,36,0.06)]"><div class="bg-primary-container text-surface-bright py-1.5 px-4 text-center overflow-hidden flex items-center justify-center"><p class="font-label-sm text-label-sm tracking-wider uppercase font-semibold text-secondary-fixed flex items-center gap-1.5 truncate"><span id="topbar-text" class="">✨ Festive Season Sale: Up to 40% Off + Free Shipping</span></p></div><div class="px-margin flex items-center justify-between py-2.5"><div class="flex items-center gap-space-sm"><div class="rounded-full overflow-hidden shrink-0 flex items-center justify-center shadow-sm w-20 h-20"><img alt="Mangal Shri Logo" class="w-full h-full object-cover rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbELSp5j4n34c3UbeNeD1CNEH0KA_6TT7nKZjaTuUL9vO3Htm7TRssRNpJTWwSHSQNwsQwYxwwVToiIgtzLR7HqPioplDc-LXGTl7-51y40acqMOBv2sCJgWN9su2uhBnbhDYZQQocodI2P42ErX1_oaXjUeRa3IWx8AIRYnMHl6MG0QveQBi81VsljIKsOeq7AVcoH7_rJOMlmCTbeiK6CDzuUEDLtqDa6CLfgH8W70CAnC4_5buUOA"></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm font-semibold tracking-tight text-primary leading-none">Mangal Shri</span><span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary mt-0.5">MENSWEAR &amp; GROOM COUTURE</span></div></div><div class="flex items-center gap-1"><a class="w-11 h-11 flex items-center justify-center relative rounded-full text-on-surface hover:text-primary transition-colors" data-path="wishlist" href="#"><span class="material-symbols-outlined text-[22px]">favorite</span><span class="absolute top-2 right-2 w-4 h-4 bg-primary text-on-primary font-label-sm text-[9px] rounded-full flex items-center justify-center leading-none font-bold">3</span></a><a class="w-11 h-11 flex items-center justify-center relative rounded-full text-on-surface hover:text-primary transition-colors" data-path="shopping-bag" href="#"><span class="material-symbols-outlined text-[22px]">shopping_bag</span><span class="absolute top-2 right-2 w-4 h-4 bg-secondary text-on-secondary font-label-sm text-[9px] rounded-full flex items-center justify-center leading-none font-bold">2</span></a></div></div><div class="px-margin flex items-center justify-between border-t border-outline-variant/30 py-2"><div class="flex items-center gap-4"><button type="button" class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold pb-1 border-b-2 border-primary">Groom &amp; Menswear Showroom</button><button type="button" class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-semibold pb-1 hover:text-primary transition-colors">Royal Heritage</button></div><span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-[10px] uppercase font-bold tracking-wider">Bespoke Edition</span></div></header><main class="flex flex-col relative w-full pt-20 pb-24 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- 1. Search & Quick Category Filter Bar -->
+<section class="px-margin pt-space-sm pb-space-sm bg-surface flex flex-col gap-space-sm">
+<div class="relative flex items-center bg-surface-container-lowest rounded-full shadow-[0_2px_12px_rgba(92,29,36,0.06)] px-space-md py-2.5">
+<span class="material-symbols-outlined text-outline text-[22px] mr-2.5">search</span>
+<input class="w-full bg-transparent font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant focus:outline-none min-w-0 pr-16" placeholder="Search Banarasi sarees, bridal lehengas..." type="text">
+<div class="absolute right-3 flex items-center gap-2">
+<button aria-label="Voice Search" class="w-8 h-8 rounded-full flex items-center justify-center text-primary-container bg-surface-container-low hover:bg-surface-container-high transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">mic</span>
+</button>
+<button aria-label="Visual Search" class="w-8 h-8 rounded-full flex items-center justify-center text-primary-container bg-surface-container-low hover:bg-surface-container-high transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">photo_camera</span>
+</button>
+</div>
+</div>
+<!-- Quick Category Pill Scroll -->
+<div class="flex items-center gap-2 overflow-x-auto no-scrollbar py-1"><button class="shrink-0 px-4 py-1.5 rounded-full bg-primary text-on-primary font-label-md text-label-md tracking-wider shadow-sm">All Menswear</button><button class="shrink-0 px-3.5 py-1.5 rounded-full bg-surface-container text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-high transition-colors">Groom Sherwanis</button><button class="shrink-0 px-3.5 py-1.5 rounded-full bg-surface-container text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-high transition-colors">Indo-Western</button><button class="shrink-0 px-3.5 py-1.5 rounded-full bg-surface-container text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-high transition-colors">Customized Tailoring</button><button class="shrink-0 px-3.5 py-1.5 rounded-full bg-surface-container text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-high transition-colors">Coat Suits</button><button class="shrink-0 px-3.5 py-1.5 rounded-full bg-surface-container text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-high transition-colors">Kurta Payjama</button><button class="shrink-0 px-3.5 py-1.5 rounded-full bg-surface-container text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-high transition-colors">Blazers</button><button class="shrink-0 px-3.5 py-1.5 rounded-full bg-surface-container text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-high transition-colors">Fabrics</button></div>
+</section>
+<!-- 2. Hero Banner: Festive Edition -->
+<section class="px-margin py-space-xs">
+<div class="relative w-full rounded-xl overflow-hidden bg-primary-container text-surface-bright shadow-[0_8px_24px_rgba(92,29,36,0.12)]">
+<div class="absolute inset-0 bg-gradient-to-t from-primary via-primary-container/85 to-primary/40 z-10"></div>
+<div id="hero-img" class="absolute inset-0 bg-cover bg-center mix-blend-overlay opacity-40" data-alt="Exquisite Indian festive model in deep maroon and gold bridal lehenga, adorned with royal gold kundan jewelry, soft warm studio lighting, rich textured drape, luxury heritage look" style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuC88VSRu6uP3ka5LpWguvW0rgMGHlGy_lsKDc9_NZ5dWG9gv-Mahrbv5URAFiibCRUjRneh0h5xZzpe-ok_7Tnpa2iNr0GKViObxFOWM1_oNzMRFM6w82dHXUKGqt--if9zLA01dcrJCNl17PQWfvhvLTuBYEneY_KoaWenKUTzizSvBFzciJFgxaVrUcKpTYhw2VmYvZtgrZMCHUhkrQ2bMtJE6zKxoiWozKYL2E27&quot;);"></div>
+<div class="relative z-20 p-5 flex flex-col items-start gap-space-sm"><div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm tracking-widest uppercase shadow-sm"><span class="material-symbols-outlined text-[13px]" style="font-variation-settings: &quot;FILL&quot; 1;">auto_awesome</span><span id="hero-tag" class="">ROYAL GROOM &amp; FESTIVE COUTURE</span></div><div class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold tracking-wider shadow-sm"><span class="text-[12px]">⭐</span><span class="">1 Lakh+ Happy Customers</span></div><div class="flex flex-col gap-1 max-w-[90%]"><h2 id="hero-title" class="font-headline-lg-mobile text-headline-lg-mobile text-surface-bright font-semibold leading-tight">Majestic Grandeur for the Modern Groom</h2><p id="hero-text" class="font-body-sm text-body-sm text-surface-container-high text-opacity-90 leading-relaxed">Handcrafted Jodhpuri Bandhgalas, Heritage Sherwanis, and Bespoke Silk Kurta sets tailored for royal occasions.</p></div><a class="mt-1 inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-secondary-container text-on-secondary-container font-label-lg text-label-lg font-bold shadow-md hover:brightness-105 active:scale-95 transition-all" href="#catalog"><span id="hero-btn" class="">Explore Men's Collection</span><span class="material-symbols-outlined text-[18px]">arrow_forward</span></a></div>
+</div>
+</section>
+<!-- Upcoming Sale Banner (controlled from the Google Sheet "Banner" tab) -->
+<section id="sale-banner" class="hidden px-margin py-space-xs">
+<div class="relative rounded-xl overflow-hidden bg-secondary-container text-on-secondary-container shadow-md">
+<div id="sale-img" class="absolute inset-0 bg-cover bg-center opacity-30"></div>
+<div class="relative p-4 flex flex-col gap-1.5 items-start">
+<span id="sale-tag" class="px-2.5 py-0.5 rounded-full bg-primary text-surface-bright font-label-sm text-label-sm tracking-widest uppercase">Upcoming Sale</span>
+<h3 id="sale-title" class="font-headline-md text-headline-md text-primary font-bold leading-tight"></h3>
+<p id="sale-text" class="font-body-sm text-body-sm"></p>
+<div class="flex items-center gap-2 flex-wrap"><span id="sale-date" class="font-label-md text-label-md font-bold text-primary"></span><span id="sale-chip" class="px-2 py-0.5 rounded-full bg-primary-container text-surface-bright font-label-sm text-[10px] font-bold"></span></div>
+<a id="sale-btn" href="#" target="_blank" rel="noopener noreferrer" class="mt-1 inline-flex px-5 py-2.5 rounded-lg bg-primary text-surface-bright font-label-lg text-label-lg font-bold shadow-md">Know More</a>
+</div></div>
+</section>
+<!-- 3. Category Quick-Nav Carousel -->
+<section class="py-space-md flex flex-col gap-space-sm">
+<div class="px-margin flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-primary font-semibold">Couture Categories</span>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest font-bold">Curated Picks</span>
+</div>
+<div class="flex items-center gap-space-md overflow-x-auto no-scrollbar px-margin"><div class="flex flex-col items-center gap-1.5 shrink-0 group cursor-pointer w-20"><div class="relative w-18 h-18 rounded-full p-1 bg-surface-container-high shadow-md"><div class="w-16 h-16 rounded-full overflow-hidden bg-surface-container"><img alt="Groom Sherwanis" class="w-full h-full object-cover group-hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida/AEtjO1WgVUdEDqoQ8weRGHdNSHBsko46NHD_FySnwbedbqqCxgtZ_Asc3j3iCCgf0Pn_VRAp8G3DE2S-3AsSiiZ-oMHiRFNt-Ctf7POYGt17zlzIUCDS97JqPDfgA3h5KXVFOOZPueHkHVCMxnkrBBLLXTzpk6S5hMQ-uMul-Kdm6XGIQG54pJP-7darPN_ic7cgloc6UHOhNA6Vi8XlofjmhPcukt_Sq4wcqXW3tY9Hhrp5DQ"></div><span class="absolute -bottom-1 left-1/2 -translate-x-1/2 px-1.5 py-0.5 rounded-full bg-primary text-on-primary font-label-sm text-[8px] uppercase tracking-wider font-extrabold whitespace-nowrap shadow-sm">HOT</span></div><span class="font-label-md text-label-md text-on-surface font-semibold text-center leading-tight">Groom Sherwanis</span></div><div class="flex flex-col items-center gap-1.5 shrink-0 group cursor-pointer w-20"><div class="relative w-18 h-18 rounded-full p-1 bg-surface-container-high shadow-md"><div class="w-16 h-16 rounded-full overflow-hidden bg-surface-container"><img alt="Indo-Western" class="w-full h-full object-cover group-hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida/AEtjO1U5tcFZNNbgxqRjf27-n-Bwq8RLLlsuJ1U1NO7pRtpAlRJAyfObMAIZNsxS3RVTaq6m9N63YZaebj0x1nrEeZ_g18ZhZaM1hj6gokdTLtTWGv67jC947JfF8XAzddgJ4l8K5K9kK_EWBjy0izebi1iQogJfCY-gmBDqgWsFESQEGIHWYd1SptmPy7AqnYjNa6GdMAqjxvFcKhdMCBvpL8NTDHlvH1oGFG7yrZHaNlsd2g"></div><span class="absolute -bottom-1 left-1/2 -translate-x-1/2 px-1.5 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-[8px] uppercase tracking-wider font-extrabold whitespace-nowrap shadow-sm">ROYALTY</span></div><span class="font-label-md text-label-md text-on-surface font-semibold text-center leading-tight">Indo-Western</span></div><div class="flex flex-col items-center gap-1.5 shrink-0 group cursor-pointer w-20"><div class="relative w-18 h-18 rounded-full p-1 bg-surface-container-high shadow-md"><div class="w-16 h-16 rounded-full overflow-hidden bg-surface-container"><img alt="Coat Suits" class="w-full h-full object-cover group-hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida/AEtjO1XgeRAn_IG1G73m3UaI4yNrz_EeAOIkc-97OEiMORtfJJbzB0neYzU-oAEpV4rtdO3DgZeVXkniT0fIOl_sZDNayYsY4Uc7rPwYl_SSlckoZkKvOuAzFS3a-fIErLLjT-4kyrmh7XlmsyMtaJYxp1Zg6pDG8b0lD-yylMSUuzFCSu_Dur6T2wvFPzRurdihBHILbDD30RYKtOxhMqEQ3yLWe5-F5bKhtGnWAH5KSYxGjQ"></div><span class="absolute -bottom-1 left-1/2 -translate-x-1/2 px-1.5 py-0.5 rounded-full bg-primary text-on-primary font-label-sm text-[8px] uppercase tracking-wider font-extrabold whitespace-nowrap shadow-sm">TRENDING</span></div><span class="font-label-md text-label-md text-on-surface font-semibold text-center leading-tight">Coat Suits</span></div><div class="flex flex-col items-center gap-1.5 shrink-0 group cursor-pointer w-20"><div class="relative w-18 h-18 rounded-full p-1 bg-surface-container-high shadow-md"><div class="w-16 h-16 rounded-full overflow-hidden bg-surface-container"><img alt="Kurta Payjama" class="w-full h-full object-cover group-hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida/AEtjO1XrJeqgykRHzc9SdiwNmHQmSktekB1JHvUsE3s0jP_81y8jGgo1h2Q-2zVN7CN79A6G9IIdxsfqsVLos-I_ZBYyqiFvoOC8RI1UUbOzbAAq3WWmye5ONzWvEbww9yCqbD3MLx3S8TVmqIrmYOhoqmn-OQzVO1q6qIe-PedvSypQH_RxCH4CJ8Ix2w4QzxNgslGGIUSsli5inrTh9oPUHMlspQejnogIKxptWMdlfWAyQQ"></div><span class="absolute -bottom-1 left-1/2 -translate-x-1/2 px-1.5 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-[8px] uppercase tracking-wider font-extrabold whitespace-nowrap shadow-sm">POPULAR</span></div><span class="font-label-md text-label-md text-on-surface font-semibold text-center leading-tight">Kurta Payjama</span></div><div class="flex flex-col items-center gap-1.5 shrink-0 group cursor-pointer w-20"><div class="relative w-18 h-18 rounded-full p-1 bg-surface-container-high shadow-md"><div class="w-16 h-16 rounded-full overflow-hidden bg-surface-container"><img alt="Customized Tailoring" class="w-full h-full object-cover group-hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC88VSRu6uP3ka5LpWguvW0rgMGHlGy_lsKDc9_NZ5dWG9gv-Mahrbv5URAFiibCRUjRneh0h5xZzpe-ok_7Tnpa2iNr0GKViObxFOWM1_oNzMRFM6w82dHXUKGqt--if9zLA01dcrJCNl17PQWfvhvLTuBYEneY_KoaWenKUTzizSvBFzciJFgxaVrUcKpTYhw2VmYvZtgrZMCHUhkrQ2bMtJE6zKxoiWozKYL2E27"></div><span class="absolute -bottom-1 left-1/2 -translate-x-1/2 px-1.5 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-[8px] uppercase tracking-wider font-extrabold whitespace-nowrap shadow-sm">BESPOKE</span></div><span class="font-label-md text-label-md text-on-surface font-semibold text-center leading-tight">Customized Tailoring</span></div><div class="flex flex-col items-center gap-1.5 shrink-0 group cursor-pointer w-20"><div class="relative w-18 h-18 rounded-full p-1 bg-surface-container-high shadow-md"><div class="w-16 h-16 rounded-full overflow-hidden bg-surface-container"><img alt="Blazers" class="w-full h-full object-cover group-hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLKGOoDagsa6pvuCW6okUCLaHJWeu0HwKCqltDjRyQKGpAtX3qyio3IA4rtykwCW4ZY90tYpNQmYQPZ0kujzWFY65-N9dT4qIhqteOydPUqcyAE9W0sGHlunVBHHZPVzQNXq3oYbQ_YnTeRMBApvARUHG9iMXcPA_EFO8ClRbK6lhQUOE8VQu6Sc-oMJ8xAk4joxJhsx0oeMPTR6hsQkZS0xyO04Mx37ABJFAIZ1FS"></div><span class="absolute -bottom-1 left-1/2 -translate-x-1/2 px-1.5 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-[8px] uppercase tracking-wider font-extrabold whitespace-nowrap shadow-sm">CLASSIC</span></div><span class="font-label-md text-label-md text-on-surface font-semibold text-center leading-tight">Blazers</span></div><div class="flex flex-col items-center gap-1.5 shrink-0 group cursor-pointer w-20"><div class="relative w-18 h-18 rounded-full p-1 bg-surface-container-high shadow-md"><div class="w-16 h-16 rounded-full overflow-hidden bg-surface-container"><img alt="Fabrics" class="w-full h-full object-cover group-hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZKGc6f8VaxOc6AaDevNUeNSYUw-833Ctix3upIcpZ1yetY5bxPdQX8vOB0NcpA_ZPxss0D_RQordV7ZvHTcZ-nXdCXav8EV49QlNlXaQ-p0ODgqBeSdnuRuhuVJD_ukK3yPpD-US5fCHhCBkXGN8BE_OpW9FTcrkWSanl2b3cKDZJJBUjbUrQENy2yCWLisOxdLGCEBL1sRt9ilrK_aX_JXzcMNUXPwNRwgd3Ox2dOEUI5fGIQd2L-Q"></div><span class="absolute -bottom-1 left-1/2 -translate-x-1/2 px-1.5 py-0.5 rounded-full bg-surface-container-highest text-on-surface font-label-sm text-[8px] uppercase tracking-wider font-extrabold whitespace-nowrap shadow-sm">HERITAGE</span></div><span class="font-label-md text-label-md text-on-surface font-semibold text-center leading-tight">Fabrics</span></div></div>
+</section>
+<!-- 4. Filter & Sort Dual Action Strip -->
+<section class="sticky top-20 z-40 bg-surface/95 backdrop-blur-md px-margin py-2 shadow-[0_4px_16px_rgba(92,29,36,0.04)] flex items-center justify-between gap-space-sm">
+<!-- Sort Trigger -->
+<div class="flex items-center gap-1.5 bg-surface-container-lowest px-3 py-1.5 rounded-lg shadow-sm flex-1 cursor-pointer">
+<span class="material-symbols-outlined text-secondary text-[18px]">swap_vert</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-[9px] uppercase tracking-wider text-on-surface-variant font-bold">Sort By</span>
+<span class="font-label-md text-label-md text-primary font-semibold truncate">Popularity</span>
+</div>
+</div>
+<!-- Filter Trigger -->
+<div class="flex items-center justify-between gap-1.5 bg-surface-container-lowest px-3 py-1.5 rounded-lg shadow-sm flex-1 cursor-pointer">
+<div class="flex items-center gap-1.5 min-w-0">
+<span class="material-symbols-outlined text-secondary text-[18px]">tune</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-[9px] uppercase tracking-wider text-on-surface-variant font-bold">Refine By</span>
+<span class="font-label-md text-label-md text-primary font-semibold truncate">Silk • Velvet • Size</span>
+</div>
+</div>
+<span class="w-5 h-5 rounded-full bg-primary-container text-surface-bright font-label-sm text-[10px] flex items-center justify-center font-bold">3</span>
+</div>
+</section>
+<!-- 5. Featured Product Catalog Grid -->
+<section class="px-margin py-space-md flex flex-col gap-space-md" id="catalog">
+<div class="flex flex-col gap-1 pb-1 border-b border-outline-variant/30"><div class="flex items-end justify-between"><div class="flex flex-col"><span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest font-bold flex items-center gap-1.5"><span class="material-symbols-outlined text-[14px] text-secondary">workspace_premium</span>Handcrafted Creations</span><h3 class="font-headline-md text-headline-md text-primary font-semibold leading-tight mt-0.5">Royal Heritage Showcase</h3></div><span class="px-2.5 py-0.5 rounded-full bg-surface-container-high text-primary-container font-label-sm text-label-sm font-semibold">4 Items</span></div></div>
+<div class="grid grid-cols-2 gap-space-sm"><!-- Card 1: Ivory Royal Zardozi Sherwani Set --><div class="flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0_4px_16px_rgba(92,29,36,0.06)] group"><div class="relative w-full aspect-[3/4] bg-surface-container overflow-hidden"><img alt="Ivory Royal Zardozi Sherwani Set" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC88VSRu6uP3ka5LpWguvW0rgMGHlGy_lsKDc9_NZ5dWG9gv-Mahrbv5URAFiibCRUjRneh0h5xZzpe-ok_7Tnpa2iNr0GKViObxFOWM1_oNzMRFM6w82dHXUKGqt--if9zLA01dcrJCNl17PQWfvhvLTuBYEneY_KoaWenKUTzizSvBFzciJFgxaVrUcKpTYhw2VmYvZtgrZMCHUhkrQ2bMtJE6zKxoiWozKYL2E27"><span class="absolute top-2 left-2 px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-[9px] uppercase tracking-wider font-extrabold shadow-sm">45% OFF</span><button aria-label="Save to Wishlist" class="absolute top-2 right-2 w-7 h-7 rounded-full bg-surface-container-lowest/90 text-primary flex items-center justify-center shadow-sm" type="button"><span class="material-symbols-outlined text-[16px]">favorite_border</span></button><div class="absolute bottom-2 left-2 right-2 px-1.5 py-0.5 bg-surface-container-lowest/90 backdrop-blur-sm rounded text-center"><span class="font-label-sm text-[9px] text-on-surface font-semibold truncate block">Handcrafted Raw Silk &amp; Safa Included</span></div></div><div class="p-2.5 flex flex-col gap-1.5 flex-1 justify-between"><div><div class="flex items-center gap-1"><span class="material-symbols-outlined text-secondary text-[14px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span><span class="font-label-sm text-label-sm text-on-surface font-bold">4.9</span><span class="font-body-sm text-[11px] text-on-surface-variant">(1.2k)</span></div><h4 class="font-headline-sm text-[15px] text-primary font-semibold leading-tight line-clamp-1 mt-0.5">Ivory Royal Sherwani Set</h4><div class="flex items-baseline gap-1.5 mt-1"><span class="font-headline-sm text-[16px] text-primary font-bold">₹14,999</span><span class="font-body-sm text-[11px] text-outline line-through">₹24,999</span></div><div class="flex items-center gap-1 mt-1.5"><button class="px-1.5 py-0.5 rounded bg-primary-container text-surface-bright font-label-sm text-[9px] font-bold">38</button><button class="px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-[9px] font-semibold">40</button><button class="px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-[9px] font-semibold">42</button><button class="px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-[9px] font-semibold">44</button></div></div><div class="flex flex-col gap-1 mt-2"><a class="w-full py-1.5 rounded-lg bg-emerald-700 text-surface-bright font-label-sm text-[11px] font-bold flex items-center justify-center gap-1 shadow-sm active:scale-95 transition-transform" href="https://wa.me/918962331971?text=Hi%20Mangal%20Shri,%20I%20am%20interested%20in%20Ivory%20Royal%20Sherwani%20Set%20(₹14999)" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[15px]">chat</span><span class="">WhatsApp Order</span></a><button class="w-full py-1.5 rounded-lg bg-primary-container text-surface-bright font-label-sm text-[11px] font-bold flex items-center justify-center gap-1 hover:bg-primary transition-colors"><span class="material-symbols-outlined text-[15px]">shopping_bag</span><span class="">Add to Bag</span></button></div></div></div><!-- Card 2: Royal Navy Embroidered Jodhpuri Bandhgala --><div class="flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0_4px_16px_rgba(92,29,36,0.06)] group"><div class="relative w-full aspect-[3/4] bg-surface-container overflow-hidden"><img alt="Royal Navy Embroidered Jodhpuri Bandhgala" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBC-mubZJZEhdnV_kw9bHz8qZfidb-MhBL3qAbEKr01Rl1F2VH-5JZnsWEluSiYU2gGq08hXqQUDDfgH_P0DVqtq0IihTJmcGDRWV4UcMM1CCpb9BGL0tmoB8EelAzTnZ183yd0f0NSSXRB5xzdpAJX1NcviUJLBm7py31XwGlDv2CY4ZVVY6JRjmMjZ45Pj_jQILjBZJEI9_cjFJCWiwv-4M5OtbiJYjOXhcMWH62s"><span class="absolute top-2 left-2 px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-[9px] uppercase tracking-wider font-extrabold shadow-sm">42% OFF</span><button aria-label="Save to Wishlist" class="absolute top-2 right-2 w-7 h-7 rounded-full bg-surface-container-lowest/90 text-primary flex items-center justify-center shadow-sm" type="button"><span class="material-symbols-outlined text-[16px]">favorite_border</span></button><div class="absolute bottom-2 left-2 right-2 px-1.5 py-0.5 bg-surface-container-lowest/90 backdrop-blur-sm rounded text-center"><span class="font-label-sm text-[9px] text-on-surface font-semibold truncate block">Micro Velvet &amp; Italian Cut</span></div></div><div class="p-2.5 flex flex-col gap-1.5 flex-1 justify-between"><div><div class="flex items-center gap-1"><span class="material-symbols-outlined text-secondary text-[14px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span><span class="font-label-sm text-label-sm text-on-surface font-bold">4.9</span><span class="font-body-sm text-[11px] text-on-surface-variant">(850)</span></div><h4 class="font-headline-sm text-[15px] text-primary font-semibold leading-tight line-clamp-1 mt-0.5">Navy Jodhpuri Bandhgala</h4><div class="flex items-baseline gap-1.5 mt-1"><span class="font-headline-sm text-[16px] text-primary font-bold">₹8,999</span><span class="font-body-sm text-[11px] text-outline line-through">₹15,499</span></div><div class="flex items-center gap-1 mt-1.5"><button class="px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-[9px] font-semibold">38</button><button class="px-1.5 py-0.5 rounded bg-primary-container text-surface-bright font-label-sm text-[9px] font-bold">40</button><button class="px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-[9px] font-semibold">42</button><button class="px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-[9px] font-semibold">44</button></div></div><div class="flex flex-col gap-1 mt-2"><a class="w-full py-1.5 rounded-lg bg-emerald-700 text-surface-bright font-label-sm text-[11px] font-bold flex items-center justify-center gap-1 shadow-sm active:scale-95 transition-transform" href="https://wa.me/918962331971?text=Hi%20Mangal%20Shri,%20I%20am%20inquiring%20about%20Navy%20Jodhpuri%20Bandhgala%20(₹8999)" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[15px]">chat</span><span class="">WhatsApp Inquiry</span></a><button class="w-full py-1.5 rounded-lg bg-surface-container-high text-primary font-label-sm text-[11px] font-bold flex items-center justify-center gap-1 hover:bg-surface-container-highest transition-colors"><span class="material-symbols-outlined text-[15px]">visibility</span><span class="">Quick View</span></button></div></div></div><!-- Card 3: Emerald Heritage Silk Kurta & Nehru Jacket --><div class="flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0_4px_16px_rgba(92,29,36,0.06)] group"><div class="relative w-full aspect-[3/4] bg-surface-container overflow-hidden"><img alt="Emerald Heritage Silk Kurta &amp; Nehru Jacket" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnp-eL9VtxfebitdLNN6nu-UReeAf6b-Sl0t_BTglK2kk2Vbt7vGp1Vcz549Qf7oIxwNPs_Q1OluSzv3syw77Nw6Ux4VRhBlA_7xi7x0eEjyj_xc-qEYNWw0z4XBkamKmc5cHjm_bNo8mWMDDJTrsj7-cPG_Jhs22LKR74wb5SeS9YA09P5qwExpv_OBPkbGCk54x5uLzpybFPCdYe8Zl3kAw3WTo6BeSK9gdu3K9u"><span class="absolute top-2 left-2 px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-[9px] uppercase tracking-wider font-extrabold shadow-sm">44% OFF</span><button aria-label="Save to Wishlist" class="absolute top-2 right-2 w-7 h-7 rounded-full bg-surface-container-lowest/90 text-primary flex items-center justify-center shadow-sm" type="button"><span class="material-symbols-outlined text-[16px]">favorite_border</span></button><div class="absolute bottom-2 left-2 right-2 px-1.5 py-0.5 bg-surface-container-lowest/90 backdrop-blur-sm rounded text-center"><span class="font-label-sm text-[9px] text-on-surface font-semibold truncate block">Pure Mulberry Silk</span></div></div><div class="p-2.5 flex flex-col gap-1.5 flex-1 justify-between"><div><div class="flex items-center gap-1"><span class="material-symbols-outlined text-secondary text-[14px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span><span class="font-label-sm text-label-sm text-on-surface font-bold">4.8</span><span class="font-body-sm text-[11px] text-on-surface-variant">(640)</span></div><h4 class="font-headline-sm text-[15px] text-primary font-semibold leading-tight line-clamp-1 mt-0.5">Emerald Silk Kurta &amp; Jacket</h4><div class="flex items-baseline gap-1.5 mt-1"><span class="font-headline-sm text-[16px] text-primary font-bold">₹4,499</span><span class="font-body-sm text-[11px] text-outline line-through">₹7,999</span></div><div class="flex items-center gap-1 mt-1.5"><button class="px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-[9px] font-semibold">38</button><button class="px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-[9px] font-semibold">40</button><button class="px-1.5 py-0.5 rounded bg-primary-container text-surface-bright font-label-sm text-[9px] font-bold">42</button><button class="px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-[9px] font-semibold">44</button></div></div><div class="flex flex-col gap-1 mt-2"><a class="w-full py-1.5 rounded-lg bg-emerald-700 text-surface-bright font-label-sm text-[11px] font-bold flex items-center justify-center gap-1 shadow-sm active:scale-95 transition-transform" href="https://wa.me/918962331971?text=Hi%20Mangal%20Shri,%20I%20am%20interested%20in%20Emerald%20Silk%20Kurta%20and%20Nehru%20Jacket%20(₹4499)" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[15px]">chat</span><span class="">WhatsApp Order</span></a><button class="w-full py-1.5 rounded-lg bg-primary-container text-surface-bright font-label-sm text-[11px] font-bold flex items-center justify-center gap-1 hover:bg-primary transition-colors"><span class="material-symbols-outlined text-[15px]">shopping_bag</span><span class="">Add to Bag</span></button></div></div></div><!-- Card 4: Champagne & Rose Indo-Western Cowl Set --><div class="flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0_4px_16px_rgba(92,29,36,0.06)] group"><div class="relative w-full aspect-[3/4] bg-surface-container overflow-hidden"><img alt="Champagne &amp; Rose Indo-Western Cowl Set" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLKGOoDagsa6pvuCW6okUCLaHJWeu0HwKCqltDjRyQKGpAtX3qyio3IA4rtykwCW4ZY90tYpNQmYQPZ0kujzWFY65-N9dT4qIhqteOydPUqcyAE9W0sGHlunVBHHZPVzQNXq3oYbQ_YnTeRMBApvARUHG9iMXcPA_EFO8ClRbK6lhQUOE8VQu6Sc-oMJ8xAk4joxJhsx0oeMPTR6hsQkZS0xyO04Mx37ABJFAIZ1FS"><span class="absolute top-2 left-2 px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-[9px] uppercase tracking-wider font-extrabold shadow-sm">40% OFF</span><button aria-label="Save to Wishlist" class="absolute top-2 right-2 w-7 h-7 rounded-full bg-surface-container-lowest/90 text-primary flex items-center justify-center shadow-sm" type="button"><span class="material-symbols-outlined text-[16px]">favorite_border</span></button><div class="absolute bottom-2 left-2 right-2 px-1.5 py-0.5 bg-surface-container-lowest/90 backdrop-blur-sm rounded text-center"><span class="font-label-sm text-[9px] text-on-surface font-semibold truncate block">Chikankari Resham &amp; Stole</span></div></div><div class="p-2.5 flex flex-col gap-1.5 flex-1 justify-between"><div><div class="flex items-center gap-1"><span class="material-symbols-outlined text-secondary text-[14px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span><span class="font-label-sm text-label-sm text-on-surface font-bold">4.8</span><span class="font-body-sm text-[11px] text-on-surface-variant">(510)</span></div><h4 class="font-headline-sm text-[15px] text-primary font-semibold leading-tight line-clamp-1 mt-0.5">Champagne Indo-Western Set</h4><div class="flex items-baseline gap-1.5 mt-1"><span class="font-headline-sm text-[16px] text-primary font-bold">₹9,299</span><span class="font-body-sm text-[11px] text-outline line-through">₹16,000</span></div><div class="flex items-center gap-1 mt-1.5"><button class="px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-[9px] font-semibold">38</button><button class="px-1.5 py-0.5 rounded bg-primary-container text-surface-bright font-label-sm text-[9px] font-bold">40</button><button class="px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-[9px] font-semibold">42</button><button class="px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-[9px] font-semibold">44</button></div></div><div class="flex flex-col gap-1 mt-2"><a class="w-full py-1.5 rounded-lg bg-emerald-700 text-surface-bright font-label-sm text-[11px] font-bold flex items-center justify-center gap-1 shadow-sm active:scale-95 transition-transform" href="https://wa.me/918962331971?text=Hi%20Mangal%20Shri,%20I%20am%20interested%20in%20Champagne%20Indo-Western%20Set%20(₹9299)" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[15px]">chat</span><span class="">WhatsApp Order</span></a><button class="w-full py-1.5 rounded-lg bg-primary-container text-surface-bright font-label-sm text-[11px] font-bold flex items-center justify-center gap-1 hover:bg-primary transition-colors"><span class="material-symbols-outlined text-[15px]">shopping_bag</span><span class="">Add to Bag</span></button></div></div></div></div>
+</section>
+<!-- 6. Trust & Heritage Perks Strip -->
+<section class="px-margin py-space-sm bg-surface-container-low flex flex-col gap-space-sm"><div class="flex items-center gap-3 p-3 bg-surface-container-lowest rounded-xl shadow-sm"><div class="w-10 h-10 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-[20px]">design_services</span></div><div class="flex flex-col min-w-0"><span class="font-label-lg text-label-lg text-primary font-bold">Custom Bespoke Tailoring</span><span class="font-body-sm text-body-sm text-on-surface-variant">Tailored to your exact measurements with complimentary virtual master-fittings.</span></div></div><div class="flex items-center gap-3 p-3 bg-surface-container-lowest rounded-xl shadow-sm"><div class="w-10 h-10 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-[20px]">workspace_premium</span></div><div class="flex flex-col min-w-0"><span class="font-label-lg text-label-lg text-primary font-bold">Authentic Handloom &amp; Velvets</span><span class="font-body-sm text-body-sm text-on-surface-variant">Pure Benarasi brocades, raw silks, and micro velvets directly from master karigars.</span></div></div><div class="flex items-center gap-3 p-3 bg-surface-container-lowest rounded-xl shadow-sm"><div class="w-10 h-10 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-[20px]">support_agent</span></div><div class="flex flex-col min-w-0"><span class="font-label-lg text-label-lg text-primary font-bold">Direct WhatsApp Groom Styling</span><span class="font-body-sm text-body-sm text-on-surface-variant">Personalized drape, safa matching, and video call consultations with senior master tailors.</span></div></div></section>
+<!-- About Us -->
+<section id="about" class="px-margin py-space-md flex flex-col gap-space-md">
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-bold">About Us</span>
+<h3 class="font-headline-md text-headline-md text-primary">Mangal Shri: Menswear &amp; Groom Couture</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Mangal Shri is a menswear showroom in Ibrahimpura, Bhopal, dedicated to dressing the modern groom. From handcrafted Jodhpuri bandhgalas and heritage sherwanis to indo-western sets, coat suits, blazers, kurta payjama and pure silk fabrics, everything is chosen and tailored for weddings and festive occasions.</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Our multi-storey showroom lets you try outfits in person, and our master tailors take live measurements and make adjustments so every outfit fits you exactly. Can&#8217;t visit? Message us on WhatsApp for styling help, safa matching and video consultations.</p>
+<div class="grid grid-cols-3 gap-2.5 text-center">
+<div class="p-3 rounded-lg bg-surface-container-low"><div class="font-headline-sm text-primary font-bold">1 Lakh+</div><div class="font-body-sm text-[11px] text-on-surface-variant">Happy customers</div></div>
+<div class="p-3 rounded-lg bg-surface-container-low"><div class="font-headline-sm text-primary font-bold">1000+</div><div class="font-body-sm text-[11px] text-on-surface-variant">Ready outfits</div></div>
+<div class="p-3 rounded-lg bg-surface-container-low"><div class="font-headline-sm text-primary font-bold">11&ndash;10</div><div class="font-body-sm text-[11px] text-on-surface-variant">Open every day</div></div>
+</div>
+<ul class="flex flex-col gap-2 font-body-sm text-body-sm text-on-surface-variant">
+<li class="flex gap-2"><span class="material-symbols-outlined text-primary text-[18px]">design_services</span>Custom bespoke tailoring to your measurements</li>
+<li class="flex gap-2"><span class="material-symbols-outlined text-primary text-[18px]">workspace_premium</span>Authentic handloom, raw silks and micro velvets</li>
+<li class="flex gap-2"><span class="material-symbols-outlined text-primary text-[18px]">support_agent</span>Direct WhatsApp groom styling with senior tailors</li>
+</ul>
+<div class="flex gap-2">
+<a href="https://wa.me/918962331971?text=Hi%20Mangal%20Shri%2C%20I%20would%20like%20to%20know%20more%20about%20your%20store." target="_blank" rel="noopener noreferrer" class="flex-1 py-2.5 rounded-lg bg-emerald-700 text-white text-center font-bold">Chat on WhatsApp</a>
+<a href="tel:8962331971" class="flex-1 py-2.5 rounded-lg bg-primary text-white text-center font-bold">Call Us</a>
+</div>
+</section>
+<!-- 7. Footer & Quick Contact Section -->
+<section class="px-margin py-space-md flex flex-col gap-space-md bg-surface"><div class="flex flex-col gap-1"><div class="inline-flex items-center gap-1.5 self-start px-2.5 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-[9px] uppercase tracking-widest font-bold"><span class="material-symbols-outlined text-[13px]" style="font-variation-settings: &quot;FILL&quot; 1;">storefront</span><span class="">FLAGSHIP EXPERIENCE</span></div><h3 class="font-headline-md text-headline-md text-primary font-semibold leading-tight">Visit Our Flagship Showroom</h3><p class="font-body-sm text-body-sm text-on-surface-variant">Step into our royal multi-storey couture showroom and explore thousands of handcrafted groom designs in person.</p></div><div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0_8px_24px_rgba(92,29,36,0.12)] border border-outline-variant/30"><div class="relative w-full aspect-[4/5] overflow-hidden bg-surface-container"><img alt="Mangal Shri Flagship Showroom" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2qemBI4hROlEW1lKWR1X76PcjJJ5YLYb6crg2TTlMl0HhVQg0lOyPe24JFjBFWjBI90sLzkq_gCv_huDxqNEs1hRjDArN2HWVNfWSVnVQCJ82_WDsHb4BvmU-BK7EXn0bBJRPhH9ZJihED9RU3yE3o8gj1xrWyBIDacgslEiqH1dRtx2Oq75i2pVa8qAuu-bcV2EZDTjKLZWEA7fFpXTnJMBhzVIdFqUoTLj8SKZw8cnH6G5aC2MpOg"><div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent flex flex-col justify-end p-4 text-surface-bright"><div class="flex items-center gap-2 mb-1"><span class="material-symbols-outlined text-secondary-fixed text-[20px]">verified</span><span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary-fixed font-bold">Mangal Shri Showroom</span></div><div class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-[10px] uppercase tracking-wider font-extrabold shadow-sm w-fit mb-1"><span class="material-symbols-outlined text-[12px]" style="font-variation-settings: &quot;FILL&quot; 1;">stars</span><span class="">1 Lakh+ Satisfied Grooms &amp; Families</span></div><h4 class="font-headline-sm text-[20px] font-bold text-surface-bright leading-snug">Multi-Storey Ethnic &amp; Groom Haven</h4><p class="font-body-sm text-[12px] text-surface-container-high/90 mt-0.5">Over 1,000+ ready Sherwanis, Jodhpuri suits, Indo-Western ensembles &amp; pure silk fabric rolls.</p></div></div><div class="p-4 flex flex-col gap-3 bg-surface-container-lowest"><div class="grid grid-cols-2 gap-2.5"><div class="p-2.5 rounded-lg bg-surface-container-low flex items-start gap-2"><span class="material-symbols-outlined text-secondary text-[20px] shrink-0 mt-0.5">straighten</span><div class="flex flex-col min-w-0"><span class="font-label-md text-label-md text-primary font-bold leading-tight">Master Tailors</span><span class="font-body-sm text-[11px] text-on-surface-variant leading-tight">Live bespoke measurement &amp; trials</span></div></div><div class="p-2.5 rounded-lg bg-surface-container-low flex items-start gap-2"><span class="material-symbols-outlined text-secondary text-[20px] shrink-0 mt-0.5">inventory_2</span><div class="flex flex-col min-w-0"><span class="font-label-md text-label-md text-primary font-bold leading-tight">1000+ Outfits</span><span class="font-body-sm text-[11px] text-on-surface-variant leading-tight">Ready trial &amp; instant adjustments</span></div></div></div><div class="flex flex-col gap-1.5 pt-1"><div class="flex items-start gap-2 text-on-surface-variant text-body-sm text-[13px]"><span class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5">location_on</span><span class=""><strong>Mangal Shri:</strong> 53, Ibrahimpura, Near Chowk Bazar, Bhopal</span></div><div class="flex items-center gap-2 text-on-surface-variant text-body-sm text-[13px]"><span class="material-symbols-outlined text-primary text-[18px] shrink-0">schedule</span><span class="">Open Everyday: 11:00 AM – 10:00 PM IST</span></div><div class="flex items-center gap-2 text-on-surface-variant text-body-sm text-[13px] flex-wrap"><span class="material-symbols-outlined text-primary text-[18px] shrink-0">call</span><span class="font-medium">Direct Call / Inquiry:</span><a class="text-primary font-bold hover:underline" href="tel:8962331971">+91 8962331971</a><span class="text-outline">|</span><a class="text-primary font-bold hover:underline" href="tel:9926355200">+91 9926355200</a></div><div class="flex items-center gap-2 text-on-surface-variant text-body-sm text-[13px]"><span class="material-symbols-outlined text-primary text-[18px] shrink-0">photo_camera</span><span class="font-medium">Instagram:</span><a class="text-primary font-bold hover:underline inline-flex items-center gap-1" href="https://www.instagram.com/mangalshree_ethnic" target="_blank" rel="noopener noreferrer">@mangalshree_ethnic</a><div class="flex items-center gap-2 text-on-surface-variant text-body-sm text-[13px]"><span class="material-symbols-outlined text-primary text-[18px] shrink-0">mail</span><span class="font-medium">Email:</span><a class="text-primary font-bold hover:underline" href="mailto:sambhavmangal844@gmail.com">sambhavmangal844@gmail.com</a></div></div></div><div class="flex gap-2 pt-1"><a class="flex-1 py-2.5 px-3 rounded-lg bg-primary text-on-primary font-label-md text-label-md font-bold flex items-center justify-center gap-1.5 shadow-sm hover:brightness-105 active:scale-95 transition-all" href="https://maps.app.goo.gl/iH1aPA8KTZZ5q8f98" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[18px]">directions</span><span class="">Get Directions</span></a><a class="flex-1 py-2.5 px-3 rounded-lg bg-emerald-700 text-surface-bright font-label-md text-label-md font-bold flex items-center justify-center gap-1.5 shadow-sm active:scale-95 transition-all" href="https://wa.me/918962331971?text=Hi%20Mangal%20Shri,%20I%20would%20like%20to%20book%20an%20in-store%20styling%20appointment" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[18px]">calendar_month</span><span class="">Book In-Store Visit</span></a></div></div></div></section><footer class="px-margin pt-space-lg pb-space-xl bg-primary-container text-surface-bright flex flex-col gap-space-md">
+<!-- Brand Identity with Provided Logo -->
+<div class="flex items-center gap-3">
+<div class="rounded-full overflow-hidden shrink-0 shadow-md flex items-center justify-center w-16 h-16"><img alt="Mangal Shri Logo" class="w-full h-full object-cover rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbELSp5j4n34c3UbeNeD1CNEH0KA_6TT7nKZjaTuUL9vO3Htm7TRssRNpJTWwSHSQNwsQwYxwwVToiIgtzLR7HqPioplDc-LXGTl7-51y40acqMOBv2sCJgWN9su2uhBnbhDYZQQocodI2P42ErX1_oaXjUeRa3IWx8AIRYnMHl6MG0QveQBi81VsljIKsOeq7AVcoH7_rJOMlmCTbeiK6CDzuUEDLtqDa6CLfgH8W70CAnC4_5buUOA"></div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm font-semibold text-surface-bright leading-none">Mangal Shri</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary-fixed mt-1">Men's Ethnic &amp; Groom Couture</span>
+</div>
+</div>
+<!-- WhatsApp Stylist Direct CTA -->
+<div class="flex flex-col gap-2 w-full"><a class="w-full py-3 px-4 rounded-xl bg-emerald-600 text-surface-bright font-label-lg text-label-lg font-bold flex items-center justify-center gap-2 shadow-lg hover:bg-emerald-500 active:scale-95 transition-all" href="https://wa.me/918962331971?text=Hi%20Mangal%20Shri%20Stylist,%20I%20would%20like%20guidance%20on%20wedding%20wear%20collection." rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[20px]">chat</span><span class="">WhatsApp Consultation (+91 8962331971)</span></a><div class="grid grid-cols-2 gap-2"><a class="py-2 px-3 rounded-lg bg-primary text-surface-bright font-label-md text-label-md font-bold flex items-center justify-center gap-1.5 shadow-sm hover:brightness-105 active:scale-95 transition-all" href="tel:8962331971"><span class="material-symbols-outlined text-[16px]">call</span><span class="">+91 8962331971</span></a><a class="py-2 px-3 rounded-lg bg-primary text-surface-bright font-label-md text-label-md font-bold flex items-center justify-center gap-1.5 shadow-sm hover:brightness-105 active:scale-95 transition-all" href="tel:9926355200"><span class="material-symbols-outlined text-[16px]">call</span><span class="">+91 9926355200</span></a></div></div>
+<!-- Studio Details -->
+<div class="flex flex-col gap-2 pt-2 bg-primary/40 p-3.5 rounded-xl"><div class="flex items-start gap-2"><span class="material-symbols-outlined text-secondary-fixed text-[18px] shrink-0 mt-0.5">location_on</span><p class="font-body-sm text-body-sm text-surface-bright/90"><strong class="text-secondary-fixed">Showroom:</strong> 53, Ibrahimpura, Near Chowk Bazar, Bhopal</p></div><div class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary-fixed text-[18px] shrink-0">call</span><p class="font-body-sm text-body-sm text-surface-bright/90"><strong class="text-secondary-fixed">Phone:</strong> <a class="underline hover:text-secondary-fixed" href="tel:8962331971">+91 8962331971</a>, <a class="underline hover:text-secondary-fixed" href="tel:9926355200">+91 9926355200</a></p></div><div class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary-fixed text-[18px] shrink-0">schedule</span><p class="font-body-sm text-body-sm text-surface-bright/90"><strong class="text-secondary-fixed">Hours:</strong> Mon - Sat: 10:00 AM – 8:30 PM IST</p></div><div class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary-fixed text-[18px] shrink-0">photo_camera</span><p class="font-body-sm text-body-sm text-surface-bright/90"><strong class="text-secondary-fixed">Instagram:</strong> <a class="underline hover:text-secondary-fixed font-medium" href="https://www.instagram.com/mangalshree_ethnic" target="_blank" rel="noopener noreferrer">@mangalshree_ethnic</a></p></div><div class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary-fixed text-[18px] shrink-0">mail</span><p class="font-body-sm text-body-sm text-surface-bright/90"><strong class="text-secondary-fixed">Email:</strong> <a class="underline hover:text-secondary-fixed font-medium" href="mailto:sambhavmangal844@gmail.com">sambhavmangal844@gmail.com</a></p></div></div>
+<!-- Social Media Links -->
+<div class="flex flex-col gap-2">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary-fixed font-semibold">Men's Ethnic &amp; Groom Couture</span>
+<div class="flex items-center gap-3">
+<a aria-label="Instagram" class="w-9 h-9 rounded-full bg-primary flex items-center justify-center text-surface-bright hover:bg-secondary transition-colors" href="https://www.instagram.com/mangalshree_ethnic" target="_blank">
+<span class="material-symbols-outlined text-[18px]">photo_camera</span>
+</a><div class="flex items-center gap-2 text-on-surface-variant text-body-sm text-[13px]"><span class="material-symbols-outlined text-primary text-[18px] shrink-0">mail</span><span class="font-medium">Email:</span><a class="text-primary font-bold hover:underline" href="mailto:sambhavmangal844@gmail.com"><br></a></div>
+<a aria-label="YouTube" class="w-9 h-9 rounded-full bg-primary flex items-center justify-center text-surface-bright hover:bg-secondary transition-colors" href="#">
+<span class="material-symbols-outlined text-[18px]">play_circle</span>
+</a>
+<a aria-label="Pinterest" class="w-9 h-9 rounded-full bg-primary flex items-center justify-center text-surface-bright hover:bg-secondary transition-colors" href="#">
+<span class="material-symbols-outlined text-[18px]">push_pin</span>
+</a>
+<a aria-label="Facebook" class="w-9 h-9 rounded-full bg-primary flex items-center justify-center text-surface-bright hover:bg-secondary transition-colors" href="#">
+<span class="material-symbols-outlined text-[18px]">public</span>
+</a>
+</div>
+</div>
+<!-- Payment Badges & Certified Tag -->
+<div class="pt-2 flex flex-col gap-2">
+<span class="font-label-sm text-[10px] uppercase tracking-wider text-surface-bright/70 font-semibold">100% Safe &amp; Secure Checkout</span>
+<div class="flex flex-wrap items-center gap-2">
+<span class="px-2 py-1 rounded bg-primary text-secondary-fixed font-label-sm text-[10px] font-bold">UPI</span>
+<span class="px-2 py-1 rounded bg-primary text-surface-bright font-label-sm text-[10px] font-bold">RuPay</span>
+<span class="px-2 py-1 rounded bg-primary text-surface-bright font-label-sm text-[10px] font-bold">Visa</span>
+<span class="px-2 py-1 rounded bg-primary text-surface-bright font-label-sm text-[10px] font-bold">Mastercard</span>
+<span class="px-2 py-1 rounded bg-secondary text-on-secondary font-label-sm text-[10px] font-bold">Cash On Delivery</span>
+</div>
+<p class="font-body-sm text-[11px] text-surface-bright/60 mt-2">© 2026 Mangal Shri Men's Ethnic &amp; Groom Couture. All artisanal handcraft rights reserved.</p>
+</div>
+</footer>
+</div>
+</main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/95 backdrop-blur-xl shadow-[0_-4px_24px_rgba(92,29,36,0.08)]" data-active-classes="text-primary font-bold"><div class="h-20 px-2 flex items-center justify-around"><a aria-current="page" class="flex flex-col items-center justify-center min-w-[56px] h-12 transition-colors gap-0.5 text-primary font-bold" data-path="home-boutique" href="#"><span class="material-symbols-outlined text-[22px]">cottage</span><span class="font-label-sm text-label-sm tracking-wide">Home</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 text-on-surface-variant hover:text-primary transition-colors gap-0.5" data-path="collections-catalog" href="#"><span class="material-symbols-outlined text-[22px]">styler</span><span class="font-label-sm text-label-sm tracking-wide">Collections</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 text-on-surface-variant hover:text-primary transition-colors gap-0.5" data-path="wishlist" href="#"><span class="material-symbols-outlined text-[22px]">favorite_border</span><span class="font-label-sm text-label-sm tracking-wide">Wishlist</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 text-on-surface-variant hover:text-primary transition-colors gap-0.5" data-path="whatsapp-concierge" href="#"><span class="material-symbols-outlined text-[22px]">support_agent</span><span class="font-label-sm text-label-sm tracking-wide">Concierge</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 text-on-surface-variant hover:text-primary transition-colors gap-0.5" data-path="boutique-account" href="#"><span class="material-symbols-outlined text-[22px]">person_outline</span><span class="font-label-sm text-label-sm tracking-wide">Account</span></a></div></nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="ms-overlay" class="hidden fixed inset-0 z-[60]">
+  <div id="ms-backdrop" class="absolute inset-0 bg-black/50"></div>
+  <div class="absolute left-0 right-0 bottom-0 max-h-[85vh] flex flex-col bg-surface rounded-t-2xl shadow-2xl pb-safe">
+    <div class="flex items-center justify-between px-4 py-3 border-b border-outline-variant/40">
+      <h3 id="ms-title" class="font-headline-md text-headline-md text-primary"></h3>
+      <button id="ms-close" type="button" aria-label="Close" class="w-10 h-10 rounded-full flex items-center justify-center text-on-surface"><span class="material-symbols-outlined">close</span></button>
+    </div>
+    <div id="ms-body" class="overflow-y-auto px-4 py-3 flex flex-col gap-3"></div>
+    <div id="ms-foot" class="px-4 py-3 border-t border-outline-variant/40"></div>
+  </div>
+</div>
+<div id="ms-toast" class="hidden fixed left-1/2 -translate-x-1/2 bottom-28 z-[70] px-4 py-2 rounded-full bg-inverse-surface text-inverse-on-surface text-[13px] shadow-lg"></div>
+<script>
+/* ===== GOOGLE SHEET CONNECTION =====
+   Paste your Google Sheet ID between the quotes below (see the guide).
+   Example link: https://docs.google.com/spreadsheets/d/1AbC...xyz/edit  ->  the ID is the long part between /d/ and /edit
+   While it says 1R9vatCPUR9JpxlBW9YIRHucPloW7Z0VGEJxQt99oO1o the site shows the built-in products. */
+window.MS_CONFIG = { SHEET_ID: '1R9vatCPUR9JpxlBW9YIRHucPloW7Z0VGEJxQt99oO1o' };
+</script>
+<script>
+function parseCSV(t) {
+  var rows = [], row = [], f = '', q = false;
+  for (var i = 0; i < t.length; i++) {
+    var c = t[i];
+    if (q) {
+      if (c === '"') { if (t[i + 1] === '"') { f += '"'; i++; } else { q = false; } }
+      else { f += c; }
+    } else if (c === '"') { q = true; }
+    else if (c === ',') { row.push(f); f = ''; }
+    else if (c === '\n' || c === '\r') { if (c === '\r' && t[i + 1] === '\n') i++; row.push(f); f = ''; rows.push(row); row = []; }
+    else { f += c; }
+  }
+  if (f !== '' || row.length) { row.push(f); rows.push(row); }
+  return rows;
+}
+function cleanRows(rows) {
+  return rows.filter(function (r) { return r.some(function (c) { return String(c).trim() !== ''; }); });
+}
+function fixImg(u) {
+  u = String(u || '').trim();
+  if (!u) return '';
+  var m = u.match(/drive\.google\.com\/file\/d\/([\w-]+)/) || u.match(/drive\.google\.com\/(?:open|uc)\?(?:[^#]*&)?id=([\w-]+)/);
+  return m ? 'https://drive.google.com/thumbnail?id=' + m[1] + '&sz=w1000' : u;
+}
+function toNum(v) {
+  var n = parseFloat(String(v || '').replace(/[^\d.]/g, ''));
+  return isNaN(n) ? 0 : Math.round(n);
+}
+function isYes(v) { return /^(yes|y|true|1|show)$/i.test(String(v || '').trim()); }
+function toProducts(rows) {
+  rows = cleanRows(rows);
+  var h = -1, i;
+  for (i = 0; i < Math.min(rows.length, 4); i++) {
+    var low = rows[i].map(function (c) { return String(c).trim().toLowerCase(); });
+    if (low.indexOf('name') > -1 && low.indexOf('price') > -1) { h = i; break; }
+  }
+  if (h < 0) return null;
+  var head = rows[h].map(function (c) { return String(c).trim().toLowerCase(); });
+  var out = [], seen = {};
+  rows.slice(h + 1).forEach(function (r) {
+    function g(n) { var k = head.indexOf(n); return k > -1 ? String(r[k] || '').trim() : ''; }
+    var name = g('name');
+    if (!name) return;
+    if (/^(no|n|false|0|hide)$/i.test(g('show'))) return;
+    var price = toNum(g('price'));
+    if (!price) return;
+    if (seen[name.toLowerCase()]) return;
+    seen[name.toLowerCase()] = 1;
+    out.push({
+      name: name, cat: g('category'), price: price, orig: toNum(g('original price')),
+      sizes: g('sizes') ? g('sizes').split(/[,\/|]/).map(function (s) { return s.trim(); }).filter(Boolean) : [],
+      img: fixImg(g('image url')), note: g('highlight'), rating: g('rating'), reviews: g('reviews'),
+      inStock: !/^(no|n|false|0|out of stock|sold out)$/i.test(g('in stock'))
+    });
+  });
+  return out;
+}
+function toKV(rows) {
+  var m = {};
+  cleanRows(rows).forEach(function (r) {
+    var k = String(r[0] || '').trim().toLowerCase();
+    if (k && k !== 'key') m[k] = String(r[1] || '').trim();
+  });
+  return m;
+}
+function parseDate(v) {
+  v = String(v || '').trim();
+  var m = v.match(/^(\d{4})-(\d{1,2})-(\d{1,2})/);
+  if (m) return new Date(+m[1], +m[2] - 1, +m[3]);
+  m = v.match(/^(\d{1,2})[\/\-.](\d{1,2})[\/\-.](\d{4})$/);
+  if (m) return new Date(+m[3], +m[2] - 1, +m[1]);
+  return null;
+}
+if (false) module.exports = { parseCSV: parseCSV, toProducts: toProducts, toKV: toKV, fixImg: fixImg, parseDate: parseDate, isYes: isYes };
+
+(function () {
+  var DEFAULT_WA = '918962331971';
+  var WA = DEFAULT_WA;
+  var SHEET_ID = (window.MS_CONFIG && window.MS_CONFIG.SHEET_ID) || '';
+  var header = document.querySelector('header');
+  var nav = document.querySelector('nav');
+  var grid = document.querySelector('#catalog > div:nth-child(2)');
+  var emptyMsg = null;
+  var CLS_WA = 'w-full py-1.5 rounded-lg bg-emerald-700 text-surface-bright font-label-sm text-[11px] font-bold flex items-center justify-center gap-1 shadow-sm active:scale-95 transition-transform';
+  var CLS_ADD = 'w-full py-1.5 rounded-lg bg-primary-container text-surface-bright font-label-sm text-[11px] font-bold flex items-center justify-center gap-1 hover:bg-primary transition-colors';
+  var DEFAULTS = [{"name": "Ivory Royal Sherwani Set", "cat": "Groom Sherwanis", "price": 14999, "orig": 24999, "sizes": ["38", "40", "42", "44"], "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuC88VSRu6uP3ka5LpWguvW0rgMGHlGy_lsKDc9_NZ5dWG9gv-Mahrbv5URAFiibCRUjRneh0h5xZzpe-ok_7Tnpa2iNr0GKViObxFOWM1_oNzMRFM6w82dHXUKGqt--if9zLA01dcrJCNl17PQWfvhvLTuBYEneY_KoaWenKUTzizSvBFzciJFgxaVrUcKpTYhw2VmYvZtgrZMCHUhkrQ2bMtJE6zKxoiWozKYL2E27", "note": "Handcrafted Raw Silk & Safa Included", "rating": "4.9", "reviews": "1.2k", "inStock": true}, {"name": "Navy Jodhpuri Bandhgala", "cat": "Coat Suits", "price": 8999, "orig": 15499, "sizes": ["38", "40", "42", "44"], "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuBC-mubZJZEhdnV_kw9bHz8qZfidb-MhBL3qAbEKr01Rl1F2VH-5JZnsWEluSiYU2gGq08hXqQUDDfgH_P0DVqtq0IihTJmcGDRWV4UcMM1CCpb9BGL0tmoB8EelAzTnZ183yd0f0NSSXRB5xzdpAJX1NcviUJLBm7py31XwGlDv2CY4ZVVY6JRjmMjZ45Pj_jQILjBZJEI9_cjFJCWiwv-4M5OtbiJYjOXhcMWH62s", "note": "Micro Velvet & Italian Cut", "rating": "4.9", "reviews": "850", "inStock": true}, {"name": "Emerald Silk Kurta & Jacket", "cat": "Kurta Payjama", "price": 4499, "orig": 7999, "sizes": ["38", "40", "42", "44"], "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuDnp-eL9VtxfebitdLNN6nu-UReeAf6b-Sl0t_BTglK2kk2Vbt7vGp1Vcz549Qf7oIxwNPs_Q1OluSzv3syw77Nw6Ux4VRhBlA_7xi7x0eEjyj_xc-qEYNWw0z4XBkamKmc5cHjm_bNo8mWMDDJTrsj7-cPG_Jhs22LKR74wb5SeS9YA09P5qwExpv_OBPkbGCk54x5uLzpybFPCdYe8Zl3kAw3WTo6BeSK9gdu3K9u", "note": "Pure Mulberry Silk", "rating": "4.8", "reviews": "640", "inStock": true}, {"name": "Champagne Indo-Western Set", "cat": "Indo-Western", "price": 9299, "orig": 16000, "sizes": ["38", "40", "42", "44"], "img": "https://lh3.googleusercontent.com/aida-public/AB6AXuDLKGOoDagsa6pvuCW6okUCLaHJWeu0HwKCqltDjRyQKGpAtX3qyio3IA4rtykwCW4ZY90tYpNQmYQPZ0kujzWFY65-N9dT4qIhqteOydPUqcyAE9W0sGHlunVBHHZPVzQNXq3oYbQ_YnTeRMBApvARUHG9iMXcPA_EFO8ClRbK6lhQUOE8VQu6Sc-oMJ8xAk4joxJhsx0oeMPTR6hsQkZS0xyO04Mx37ABJFAIZ1FS", "note": "Chikankari Resham & Stole", "rating": "4.8", "reviews": "510", "inStock": true}];
+
+  function load(k) { try { return JSON.parse(localStorage.getItem(k)) || []; } catch (e) { return []; } }
+  function save(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} }
+  var wishlist = load('ms_wishlist').filter(function (x) { return typeof x === 'string'; });
+  var cart = load('ms_cart').filter(function (x) { return x && typeof x.id === 'string'; });
+  var orders = load('ms_orders').filter(function (o) { return o && o.items; });
+  var profile = (function () { try { return JSON.parse(localStorage.getItem('ms_profile')) || {}; } catch (e) { return {}; } })();
+  var products = [], byName = {};
+
+  function money(n) { return '\u20B9' + Number(n).toLocaleString('en-IN'); }
+  function esc(s) { return String(s).replace(/[&<>"]/g, function (m) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[m]; }); }
+  function toast(msg) {
+    var t = document.getElementById('ms-toast');
+    t.textContent = msg; t.classList.remove('hidden');
+    clearTimeout(toast.t); toast.t = setTimeout(function () { t.classList.add('hidden'); }, 1800);
+  }
+  function scrollToEl(el) {
+    if (!el) return;
+    var y = el.getBoundingClientRect().top + window.pageYOffset - header.offsetHeight - 8;
+    window.scrollTo({ top: y, behavior: 'smooth' });
+  }
+  function setText(id, v) { if (v) { var e = document.getElementById(id); if (e) e.textContent = v; } }
+
+  // ---------- Catalog (built from data) ----------
+  var PLACEHOLDER = 'data:image/svg+xml;utf8,' + encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" width="300" height="400"><rect width="300" height="400" fill="#ebe8e3"/></svg>');
+  function sizeCls(on) {
+    return 'px-1.5 py-0.5 rounded font-label-sm text-[9px] font-bold ' + (on ? 'bg-primary-container text-surface-bright' : 'bg-surface-container text-on-surface-variant');
+  }
+  function cardHTML(p, i) {
+    var off = p.orig > p.price ? Math.round((p.orig - p.price) / p.orig * 100) : 0;
+    var sold = !p.inStock;
+    var badge = sold
+      ? '<span class="absolute top-2 left-2 px-2 py-0.5 rounded-full bg-error text-white font-label-sm text-[9px] uppercase tracking-wider font-extrabold shadow-sm">Sold Out</span>'
+      : (off ? '<span class="absolute top-2 left-2 px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-[9px] uppercase tracking-wider font-extrabold shadow-sm">' + off + '% OFF</span>' : '');
+    var note = p.note ? '<div class="absolute bottom-2 left-2 right-2 px-1.5 py-0.5 bg-surface-container-lowest/90 backdrop-blur-sm rounded text-center"><span class="font-label-sm text-[9px] text-on-surface font-semibold truncate block">' + esc(p.note) + '</span></div>' : '';
+    var rating = p.rating ? '<div class="flex items-center gap-1"><span class="material-symbols-outlined text-secondary text-[14px]" style="font-variation-settings: \'FILL\' 1;">star</span><span class="font-label-sm text-label-sm text-on-surface font-bold">' + esc(p.rating) + '</span>' + (p.reviews ? '<span class="font-body-sm text-[11px] text-on-surface-variant">(' + esc(p.reviews) + ')</span>' : '') + '</div>' : '';
+    var sizes = p.sizes.length ? '<div class="flex items-center gap-1 mt-1.5 flex-wrap">' + p.sizes.map(function (s) { return '<button type="button" data-size="' + esc(s) + '" class="' + sizeCls(s === p.size) + '">' + esc(s) + '</button>'; }).join('') + '</div>' : '';
+    var wa = 'https://wa.me/' + WA + '?text=' + encodeURIComponent('Hi Mangal Shri, I am ' + (sold ? 'asking about restock of ' : 'interested in ') + p.name + ' (' + money(p.price) + ')');
+    return '<div data-pid="' + i + '" class="flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0_4px_16px_rgba(92,29,36,0.06)] group">' +
+      '<div class="relative w-full aspect-[3/4] bg-surface-container overflow-hidden">' +
+      '<img data-quick alt="' + esc(p.name) + '" src="' + esc(p.img || PLACEHOLDER) + '" onerror="this.onerror=null;this.src=\'' + PLACEHOLDER.replace(/'/g, '%27') + '\'" class="w-full h-full object-cover cursor-pointer ' + (sold ? 'opacity-50 grayscale' : '') + '">' +
+      badge +
+      '<button type="button" data-wish aria-label="Save to Wishlist" class="absolute top-2 right-2 w-7 h-7 rounded-full bg-surface-container-lowest/90 text-primary flex items-center justify-center shadow-sm"><span class="material-symbols-outlined text-[16px]">favorite_border</span></button>' +
+      note + '</div>' +
+      '<div class="p-2.5 flex flex-col gap-1.5 flex-1 justify-between"><div>' + rating +
+      '<h4 class="font-headline-sm text-[15px] text-primary font-semibold leading-tight line-clamp-1 mt-0.5">' + esc(p.name) + '</h4>' +
+      '<div class="flex items-baseline gap-1.5 mt-1"><span class="font-headline-sm text-[16px] text-primary font-bold">' + money(p.price) + '</span>' + (p.orig > p.price ? '<span class="font-body-sm text-[11px] text-outline line-through">' + money(p.orig) + '</span>' : '') + '</div>' +
+      sizes + '</div>' +
+      '<div class="flex flex-col gap-1 mt-2"><a class="' + CLS_WA + '" href="' + wa + '" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[15px]">chat</span><span>' + (sold ? 'Ask About Restock' : 'WhatsApp Order') + '</span></a>' +
+      (sold ? '<button type="button" disabled class="' + CLS_ADD + ' opacity-50"><span>Out of Stock</span></button>' : '<button type="button" data-add class="' + CLS_ADD + '"><span class="material-symbols-outlined text-[15px]">shopping_bag</span><span>Add to Bag</span></button>') +
+      '</div></div></div>';
+  }
+  function renderCatalog() {
+    grid.innerHTML = products.map(cardHTML).join('') + '<p id="ms-empty" class="col-span-2 text-center text-on-surface-variant py-8" style="display:none">No items found here yet. Message us on WhatsApp for the full range.</p>';
+    emptyMsg = document.getElementById('ms-empty');
+    products.forEach(function (p, i) { p.el = grid.children[i]; });
+  }
+  function setProducts(list) {
+    products = list.map(function (d) { var p = {}; for (var k in d) p[k] = d[k]; p.size = p.sizes && p.sizes.length ? p.sizes[0] : null; p.sizes = p.sizes || []; return p; });
+    byName = {}; products.forEach(function (p) { byName[p.name] = p; });
+    cart = cart.filter(function (i) { return byName[i.id] && byName[i.id].inStock; });
+    wishlist = wishlist.filter(function (n) { return byName[n]; });
+    renderCatalog(); refresh(); applyFilters(); applySort();
+  }
+
+  // ---------- Badges, hearts ----------
+  function setBadge(a, n) {
+    var spans = a ? a.querySelectorAll('span') : [];
+    var b = spans[1];
+    if (!b) return;
+    b.textContent = n; b.style.display = n ? '' : 'none';
+  }
+  function cartCount() { return cart.reduce(function (s, i) { return s + i.qty; }, 0); }
+  function refresh() {
+    setBadge(header.querySelector('[data-path="wishlist"]'), wishlist.length);
+    setBadge(header.querySelector('[data-path="shopping-bag"]'), cartCount());
+    products.forEach(function (p) {
+      if (!p.el) return;
+      var icon = p.el.querySelector('[data-wish] span');
+      var on = wishlist.indexOf(p.name) > -1;
+      icon.textContent = on ? 'favorite' : 'favorite_border';
+      icon.style.fontVariationSettings = on ? '"FILL" 1' : '';
+      icon.style.color = on ? '#ba1a1a' : '';
+    });
+    save('ms_wishlist', wishlist); save('ms_cart', cart);
+  }
+
+  // ---------- Cart / wishlist actions ----------
+  function addToCart(name, size) {
+    var p = byName[name];
+    if (!p) return;
+    if (!p.inStock) { toast('Sorry, this item is out of stock'); return; }
+    var found = cart.filter(function (i) { return i.id === name && i.size === size; })[0];
+    if (found) found.qty++; else cart.push({ id: name, size: size, qty: 1 });
+    refresh(); toast('Added to bag');
+  }
+  function toggleWish(name) {
+    var i = wishlist.indexOf(name);
+    if (i > -1) { wishlist.splice(i, 1); toast('Removed from wishlist'); }
+    else { wishlist.push(name); toast('Saved to wishlist'); }
+    refresh();
+  }
+  grid.addEventListener('click', function (e) {
+    var card = e.target.closest('[data-pid]'); if (!card) return;
+    var p = products[+card.getAttribute('data-pid')]; if (!p) return;
+    var t;
+    if (e.target.closest('[data-wish]')) { toggleWish(p.name); }
+    else if ((t = e.target.closest('[data-size]'))) {
+      p.size = t.getAttribute('data-size');
+      card.querySelectorAll('[data-size]').forEach(function (b) { b.className = sizeCls(b.getAttribute('data-size') === p.size); });
+    }
+    else if (e.target.closest('[data-add]')) { addToCart(p.name, p.size); }
+    else if (e.target.closest('[data-quick]')) { openSheet('quick', p.name); }
+  });
+
+  // ---------- Sheet (drawer) ----------
+  var overlay = document.getElementById('ms-overlay');
+  var current = null;
+  function openSheet(kind, arg) {
+    current = { kind: kind, arg: arg };
+    overlay.classList.remove('hidden'); document.body.style.overflow = 'hidden';
+    renderSheet();
+  }
+  function closeSheet() {
+    overlay.classList.add('hidden'); current = null;
+    document.body.style.overflow = acct.classList.contains('hidden') ? '' : document.body.style.overflow;
+    document.body.style.overflow = '';
+  }
+  document.getElementById('ms-close').addEventListener('click', closeSheet);
+  document.getElementById('ms-backdrop').addEventListener('click', closeSheet);
+
+  function renderSheet() {
+    if (!current) return;
+    var title = document.getElementById('ms-title'), body = document.getElementById('ms-body'), foot = document.getElementById('ms-foot');
+    var html = '', fhtml = '';
+    if (current.kind === 'cart') {
+      title.textContent = 'Your Bag (' + cartCount() + ')';
+      if (!cart.length) html = '<p class="text-on-surface-variant text-center py-8">Your bag is empty.</p>';
+      var total = 0, lines = [];
+      cart.forEach(function (it, idx) {
+        var p = byName[it.id]; if (!p) return;
+        total += p.price * it.qty;
+        lines.push(it.qty + ' x ' + p.name + (it.size ? ' (Size ' + it.size + ')' : '') + ' - ' + money(p.price * it.qty));
+        html += '<div class="flex gap-3 items-center"><img src="' + esc(p.img || PLACEHOLDER) + '" class="w-16 h-20 object-cover rounded-lg"><div class="flex-1 min-w-0"><div class="font-semibold text-primary leading-tight">' + esc(p.name) + '</div><div class="text-[12px] text-on-surface-variant">' + (it.size ? 'Size ' + esc(it.size) : 'One size') + '</div><div class="font-bold">' + money(p.price) + '</div></div>' +
+          '<div class="flex items-center gap-2"><button data-act="dec" data-i="' + idx + '" class="w-8 h-8 rounded-full bg-surface-container font-bold">-</button><span class="w-5 text-center">' + it.qty + '</span><button data-act="inc" data-i="' + idx + '" class="w-8 h-8 rounded-full bg-surface-container font-bold">+</button></div>' +
+          '<button data-act="del" data-i="' + idx + '" aria-label="Remove" class="text-outline"><span class="material-symbols-outlined">delete</span></button></div>';
+      });
+      if (cart.length) {
+        current.orderId = current.orderId || ('MS' + Date.now().toString().slice(-6));
+        var msg = 'Hi Mangal Shri, I would like to order (Ref ' + current.orderId + '):\n' + lines.join('\n') + '\nTotal: ' + money(total) + (profile.name ? '\nName: ' + profile.name : '') + (profile.phone ? '\nPhone: ' + profile.phone : '') + (profile.addr ? '\nDeliver to: ' + profile.addr : '');
+        fhtml = '<div class="flex justify-between font-bold text-primary mb-2"><span>Total</span><span>' + money(total) + '</span></div>' +
+          '<a data-act="placeorder" target="_blank" rel="noopener noreferrer" href="https://wa.me/' + WA + '?text=' + encodeURIComponent(msg) + '" class="block w-full text-center py-3 rounded-lg bg-emerald-700 text-white font-bold">Order on WhatsApp</a>';
+      }
+    } else if (current.kind === 'wishlist') {
+      title.textContent = 'Wishlist (' + wishlist.length + ')';
+      if (!wishlist.length) html = '<p class="text-on-surface-variant text-center py-8">No saved items yet. Tap the heart on any product.</p>';
+      wishlist.forEach(function (name, idx) {
+        var p = byName[name]; if (!p) return;
+        html += '<div class="flex gap-3 items-center"><img src="' + esc(p.img || PLACEHOLDER) + '" class="w-16 h-20 object-cover rounded-lg"><div class="flex-1 min-w-0"><div class="font-semibold text-primary leading-tight">' + esc(p.name) + '</div><div class="font-bold">' + money(p.price) + '</div>' + (p.inStock ? '' : '<div class="text-[11px] text-error font-bold">Sold out</div>') + '</div>' +
+          (p.inStock ? '<button data-act="wbag" data-i="' + idx + '" class="px-3 py-2 rounded-lg bg-primary text-white text-[12px] font-bold">Add to Bag</button>' : '') +
+          '<button data-act="wdel" data-i="' + idx + '" aria-label="Remove" class="text-outline"><span class="material-symbols-outlined">delete</span></button></div>';
+      });
+    } else if (current.kind === 'quick') {
+      var q = byName[current.arg];
+      if (!q) { closeSheet(); return; }
+      title.textContent = 'Quick View';
+      current.size = current.size || q.size;
+      html = '<img src="' + esc(q.img || PLACEHOLDER) + '" class="w-full max-h-72 object-cover rounded-xl ' + (q.inStock ? '' : 'opacity-50 grayscale') + '"><div class="font-headline-sm text-primary text-[20px]">' + esc(q.name) + '</div><div class="font-bold text-[18px]">' + money(q.price) + (q.orig > q.price ? ' <span class="text-[13px] text-outline line-through font-normal">' + money(q.orig) + '</span>' : '') + '</div>' +
+        (q.note ? '<div class="text-[13px] text-on-surface-variant">' + esc(q.note) + '</div>' : '') +
+        (q.sizes.length ? '<div class="flex gap-2 flex-wrap">' + q.sizes.map(function (s) { return '<button data-act="qsize" data-s="' + esc(s) + '" class="px-3 py-1.5 rounded-lg ' + (s === current.size ? 'bg-primary-container text-surface-bright' : 'bg-surface-container text-on-surface') + '">' + esc(s) + '</button>'; }).join('') + '</div>' : '');
+      fhtml = q.inStock ? '<button data-act="qadd" class="w-full py-3 rounded-lg bg-primary text-white font-bold">Add to Bag</button>' : '<div class="w-full py-3 rounded-lg bg-surface-container text-center font-bold text-error">Sold Out</div>';
+    }
+    body.innerHTML = html; foot.innerHTML = fhtml; foot.style.display = fhtml ? '' : 'none';
+  }
+
+  overlay.addEventListener('click', function (e) {
+    var b = e.target.closest('[data-act]'); if (!b) return;
+    var act = b.getAttribute('data-act'), i = parseInt(b.getAttribute('data-i'), 10);
+    if (act === 'inc') cart[i].qty++;
+    else if (act === 'dec') { cart[i].qty--; if (cart[i].qty < 1) cart.splice(i, 1); }
+    else if (act === 'del') cart.splice(i, 1);
+    else if (act === 'wdel') wishlist.splice(i, 1);
+    else if (act === 'wbag') { var wp = byName[wishlist[i]]; if (wp) addToCart(wp.name, wp.size); }
+    else if (act === 'qsize') { current.size = b.getAttribute('data-s'); }
+    else if (act === 'qadd') { addToCart(current.arg, current.size); closeSheet(); return; }
+    else if (act === 'placeorder') {
+      var tot = 0;
+      var snap = cart.map(function (it) { var pr = byName[it.id]; tot += pr.price * it.qty; return { name: pr.name, size: it.size, qty: it.qty, price: pr.price }; });
+      orders.unshift({ ref: current.orderId, date: new Date().toISOString(), items: snap, total: tot });
+      save('ms_orders', orders); cart.splice(0); toast('Order saved in My Account');
+    }
+    refresh(); renderSheet();
+  });
+
+  // ---------- Header + bottom nav ----------
+  document.querySelectorAll('[data-path]').forEach(function (a) {
+    a.addEventListener('click', function (e) {
+      e.preventDefault();
+      var path = a.getAttribute('data-path');
+      if (path === 'home-boutique' || path === 'collections-catalog') closeAccount();
+      if (path === 'wishlist') openSheet('wishlist');
+      else if (path === 'shopping-bag') openSheet('cart');
+      else if (path === 'home-boutique') window.scrollTo({ top: 0, behavior: 'smooth' });
+      else if (path === 'collections-catalog') scrollToEl(document.getElementById('catalog'));
+      else if (path === 'whatsapp-concierge') window.open('https://wa.me/' + WA + '?text=' + encodeURIComponent('Hi Mangal Shri Stylist, I would like guidance on wedding wear collection.'), '_blank');
+      else if (path === 'boutique-account') openAccount('home');
+    });
+  });
+  document.querySelectorAll('a[href="#catalog"]').forEach(function (a) {
+    a.addEventListener('click', function (e) { e.preventDefault(); scrollToEl(document.getElementById('catalog')); });
+  });
+  var tabBtns = header.querySelectorAll('button');
+  if (tabBtns[1]) tabBtns[1].addEventListener('click', function () { scrollToEl(document.getElementById('about')); });
+
+  // ---------- Filters: pills, category tiles, search, sort ----------
+  var pillWrap = document.querySelector('main section:first-of-type > div:nth-child(2)');
+  var pills = Array.prototype.slice.call(pillWrap.querySelectorAll('button'));
+  var pillNames = pills.map(function (b) { return b.textContent.trim(); });
+  var activeCls = pills[0].className, inactiveCls = pills[1].className;
+  var state = { cat: 'All Menswear', q: '', sort: 0 };
+  var countEl = document.querySelector('#catalog > div:first-child span.rounded-full');
+
+  function applyFilters() {
+    var shown = 0, cat = state.cat.toLowerCase();
+    products.forEach(function (p) {
+      var okCat = state.cat === 'All Menswear' || String(p.cat).toLowerCase() === cat;
+      var okQ = !state.q || p.name.toLowerCase().indexOf(state.q) > -1 || String(p.cat).toLowerCase().indexOf(state.q) > -1;
+      p.el.style.display = (okCat && okQ) ? '' : 'none';
+      if (okCat && okQ) shown++;
+    });
+    if (emptyMsg) emptyMsg.style.display = shown ? 'none' : '';
+    if (countEl) countEl.textContent = shown + (shown === 1 ? ' Item' : ' Items');
+    pills.forEach(function (b) { b.className = b.textContent.trim() === state.cat ? activeCls : inactiveCls; });
+  }
+  pills.forEach(function (b) {
+    b.addEventListener('click', function () { state.cat = b.textContent.trim(); applyFilters(); scrollToEl(document.getElementById('catalog')); });
+  });
+  document.querySelectorAll('main img[alt]').forEach(function (img) {
+    if (pillNames.indexOf(img.alt) === -1 || img.closest('#catalog')) return;
+    var tile = img.closest('div[class*="shrink-0"]') || img.parentElement.parentElement.parentElement;
+    tile.style.cursor = 'pointer';
+    tile.addEventListener('click', function () { state.cat = img.alt; applyFilters(); scrollToEl(document.getElementById('catalog')); });
+  });
+  var search = document.querySelector('main input[type="text"]');
+  if (search) search.addEventListener('input', function () { state.q = search.value.trim().toLowerCase(); applyFilters(); });
+
+  var sortLabels = ['Popularity', 'Price: Low to High', 'Price: High to Low'];
+  var strip = null;
+  document.querySelectorAll('main section').forEach(function (s) { if (s.textContent.indexOf('Sort By') > -1 && !s.id) strip = s; });
+  var sortText = null;
+  function applySort() {
+    var sorted = products.slice();
+    if (state.sort === 1) sorted.sort(function (a, b) { return a.price - b.price; });
+    if (state.sort === 2) sorted.sort(function (a, b) { return b.price - a.price; });
+    sorted.forEach(function (p) { grid.insertBefore(p.el, emptyMsg); });
+  }
+  if (strip) {
+    var sortTrigger = strip.children[0];
+    sortText = sortTrigger.querySelectorAll('span')[2];
+    sortTrigger.style.cursor = 'pointer';
+    sortTrigger.addEventListener('click', function () {
+      state.sort = (state.sort + 1) % 3;
+      if (sortText) sortText.textContent = sortLabels[state.sort];
+      applySort(); toast('Sorted: ' + sortLabels[state.sort]);
+    });
+  }
+
+  // ---------- Account page (Myntra / Flipkart style) ----------
+  var acct = document.createElement('div');
+  acct.id = 'ms-account';
+  acct.className = 'hidden fixed left-0 right-0 z-[49] bg-surface-container-low overflow-y-auto';
+  document.body.appendChild(acct);
+  var acctView = 'home';
+
+  function layoutAccount() {
+    acct.style.top = header.offsetHeight + 'px';
+    acct.style.bottom = nav.offsetHeight + 'px';
+  }
+  function setNavActive(path) {
+    nav.querySelectorAll('a[data-path]').forEach(function (a) {
+      var on = a.getAttribute('data-path') === path;
+      ['text-primary', 'font-bold'].forEach(function (c) { a.classList.toggle(c, on); });
+      a.classList.toggle('text-on-surface-variant', !on);
+    });
+  }
+  function closeAccount() {
+    if (acct.classList.contains('hidden')) return;
+    acct.classList.add('hidden'); setNavActive('home-boutique');
+  }
+  function openAccount(view) {
+    acctView = view || 'home';
+    layoutAccount();
+    acct.classList.remove('hidden'); acct.scrollTop = 0; setNavActive('boutique-account');
+    renderAccount();
+  }
+  window.addEventListener('resize', function () { if (!acct.classList.contains('hidden')) layoutAccount(); });
+
+  function row(icon, label, sub, go) {
+    return '<button data-go="' + go + '" class="w-full flex items-center gap-3 px-4 py-3.5 bg-white text-left border-b border-outline-variant/30">' +
+      '<span class="material-symbols-outlined text-primary">' + icon + '</span>' +
+      '<span class="flex-1 min-w-0"><span class="block font-semibold text-on-surface">' + label + '</span>' + (sub ? '<span class="block text-[12px] text-on-surface-variant truncate">' + sub + '</span>' : '') + '</span>' +
+      '<span class="material-symbols-outlined text-outline">chevron_right</span></button>';
+  }
+  function tile(icon, label, go) {
+    return '<button data-go="' + go + '" class="flex items-center gap-2 px-3 py-3 bg-white rounded-lg border border-outline-variant/40 shadow-sm text-left">' +
+      '<span class="material-symbols-outlined text-primary">' + icon + '</span><span class="font-semibold text-on-surface">' + label + '</span></button>';
+  }
+  function topbar(title) {
+    return '<div class="sticky top-0 z-10 flex items-center gap-2 px-2 py-2 bg-white border-b border-outline-variant/40">' +
+      '<button data-go="home" aria-label="Back" class="w-10 h-10 flex items-center justify-center"><span class="material-symbols-outlined">arrow_back</span></button>' +
+      '<span class="font-headline-sm text-primary text-[18px] font-semibold">' + title + '</span></div>';
+  }
+  function field(id, label, val, type) {
+    return '<label class="flex flex-col gap-1"><span class="text-[12px] text-on-surface-variant font-semibold">' + label + '</span>' +
+      '<input id="' + id + '" type="' + (type || 'text') + '" value="' + esc(val || '') + '" class="w-full rounded-lg border border-outline-variant bg-white px-3 py-2.5"></label>';
+  }
+
+  function renderAccount() {
+    var h = '';
+    if (acctView === 'home') {
+      var nm = profile.name || '';
+      var initial = nm ? nm.charAt(0).toUpperCase() : 'M';
+      h += '<div class="bg-primary-container text-surface-bright px-4 py-5 flex items-center gap-3">' +
+        '<div class="w-14 h-14 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center text-[24px] font-bold">' + esc(initial) + '</div>' +
+        '<div class="flex-1 min-w-0"><div class="font-headline-sm text-[20px] font-semibold truncate">' + (nm ? 'Hi, ' + esc(nm) : 'Welcome to Mangal Shri') + '</div>' +
+        '<div class="text-[12px] opacity-80 truncate">' + (profile.phone ? '+91 ' + esc(profile.phone) : 'Add your details for faster ordering') + '</div></div>' +
+        '<button data-go="profile" class="px-3 py-1.5 rounded-lg border border-surface-bright/60 text-[12px] font-bold">' + (nm ? 'Edit' : 'Add details') + '</button></div>';
+      h += '<div class="grid grid-cols-2 gap-2.5 p-3">' + tile('package_2', 'Orders', 'orders') + tile('favorite', 'Wishlist', 'wishlist') + tile('location_on', 'Addresses', 'address') + tile('support_agent', 'Help Centre', 'help') + '</div>';
+      h += '<div class="text-[11px] uppercase tracking-widest text-on-surface-variant font-bold px-4 pt-2 pb-1">Account</div>';
+      h += '<div>' + row('person', 'Edit Profile', 'Name, phone, email', 'profile') + row('inventory_2', 'My Orders', orders.length ? orders.length + ' order' + (orders.length > 1 ? 's' : '') : 'No orders yet', 'orders') +
+        row('favorite', 'My Wishlist', wishlist.length + ' saved item' + (wishlist.length === 1 ? '' : 's'), 'wishlist') + row('home_pin', 'Saved Address', profile.addr ? esc(profile.addr) : 'Add delivery address', 'address') + '</div>';
+      h += '<div class="text-[11px] uppercase tracking-widest text-on-surface-variant font-bold px-4 pt-4 pb-1">Store</div>';
+      h += '<div>' + row('event_available', 'Book Styling Appointment', 'In-store fitting via WhatsApp', 'book') + row('call', 'Contact Us', '+91 8962331971', 'call') +
+        row('info', 'About Us', 'Our story and services', 'about') + row('storefront', 'Visit Our Showroom', 'Ibrahimpura, Bhopal', 'visit') + '</div>';
+      h += '<div class="p-4"><button data-go="clear" class="w-full py-3 rounded-lg bg-white border border-error text-error font-bold">Clear my data on this phone</button>' +
+        '<div class="text-center text-[11px] text-on-surface-variant pt-3">Mangal Shri &middot; Menswear &amp; Groom Couture</div></div>';
+    } else if (acctView === 'orders') {
+      h += topbar('My Orders');
+      if (!orders.length) {
+        h += '<div class="flex flex-col items-center text-center gap-2 px-6 py-14"><span class="material-symbols-outlined text-[56px] text-outline">package_2</span><div class="font-semibold text-primary text-[18px]">No orders yet</div><div class="text-on-surface-variant text-[13px]">Orders you send on WhatsApp will appear here.</div><button data-go="shop" class="mt-3 px-5 py-2.5 rounded-lg bg-primary text-white font-bold">Start shopping</button></div>';
+      }
+      h += '<div class="flex flex-col gap-2.5 p-3">';
+      orders.forEach(function (o, idx) {
+        var d = new Date(o.date).toLocaleDateString('en-IN', { day: 'numeric', month: 'short', year: 'numeric' });
+        h += '<div class="bg-white rounded-xl border border-outline-variant/40 shadow-sm overflow-hidden"><div class="flex justify-between items-center px-3 py-2 bg-surface-container-low"><div><div class="font-bold text-primary">Order ' + esc(o.ref) + '</div><div class="text-[11px] text-on-surface-variant">Placed on ' + d + '</div></div>' +
+          '<span class="text-[11px] px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-bold">Sent on WhatsApp</span></div>';
+        o.items.forEach(function (it) {
+          var pr = byName[it.name];
+          h += '<div class="flex gap-3 items-center px-3 py-2.5 border-t border-outline-variant/30"><img src="' + esc(pr && pr.img ? pr.img : PLACEHOLDER) + '" class="w-14 h-[72px] object-cover rounded-lg"><div class="flex-1 min-w-0"><div class="font-semibold text-on-surface leading-tight">' + esc(it.name) + '</div><div class="text-[12px] text-on-surface-variant">' + (it.size ? 'Size ' + esc(it.size) + ' &middot; ' : '') + 'Qty ' + it.qty + '</div></div><div class="font-bold">' + money(it.price * it.qty) + '</div></div>';
+        });
+        h += '<div class="flex items-center justify-between px-3 py-2.5 border-t border-outline-variant/30"><div><span class="text-[12px] text-on-surface-variant">Total </span><span class="font-bold">' + money(o.total) + '</span></div><div class="flex gap-2">' +
+          '<a target="_blank" rel="noopener noreferrer" href="https://wa.me/' + WA + '?text=' + encodeURIComponent('Hi Mangal Shri, I would like an update on my order ' + o.ref + '.') + '" class="px-3 py-1.5 rounded-lg bg-emerald-700 text-white text-[12px] font-bold">Check status</a>' +
+          '<button data-go="reorder" data-i="' + idx + '" class="px-3 py-1.5 rounded-lg bg-primary text-white text-[12px] font-bold">Reorder</button></div></div></div>';
+      });
+      h += '</div>';
+    } else if (acctView === 'profile') {
+      h += topbar('Edit Profile') + '<div class="flex flex-col gap-3 p-4 bg-white m-3 rounded-xl border border-outline-variant/40">' +
+        field('ms-name', 'Full name', profile.name) + field('ms-phone', 'Mobile number', profile.phone, 'tel') + field('ms-email', 'Email (optional)', profile.email, 'email') +
+        '<button data-go="saveprofile" class="py-3 rounded-lg bg-primary text-white font-bold">Save</button>' +
+        '<div class="text-[11px] text-on-surface-variant">Saved only on this phone. Your name, phone and address are added to your WhatsApp orders.</div></div>';
+    } else if (acctView === 'address') {
+      var ad = profile.address || {};
+      h += topbar('Saved Address') + '<div class="flex flex-col gap-3 p-4 bg-white m-3 rounded-xl border border-outline-variant/40">' +
+        field('ms-a1', 'House no., street, area', ad.line) + field('ms-a2', 'City', ad.city) + field('ms-a3', 'Pincode', ad.pin, 'tel') +
+        '<button data-go="saveaddress" class="py-3 rounded-lg bg-primary text-white font-bold">Save address</button></div>';
+    } else if (acctView === 'help') {
+      h += topbar('Help Centre') + '<div class="m-3 rounded-xl overflow-hidden border border-outline-variant/40">' +
+        row('chat', 'Chat on WhatsApp', 'Fastest way to reach us', 'wa') + row('call', 'Call +91 8962331971', 'Open daily 11 AM to 10 PM', 'call') + row('call', 'Call +91 9926355200', '', 'call2') + row('mail', 'Email us', 'sambhavmangal844@gmail.com', 'mail') + '</div>';
+    }
+    acct.innerHTML = h;
+  }
+
+  acct.addEventListener('click', function (e) {
+    var b = e.target.closest('[data-go]'); if (!b) return;
+    var go = b.getAttribute('data-go');
+    var views = ['home', 'orders', 'profile', 'address', 'help'];
+    if (views.indexOf(go) > -1) { acctView = go; acct.scrollTop = 0; renderAccount(); return; }
+    if (go === 'wishlist') openSheet('wishlist');
+    else if (go === 'shop') { closeAccount(); scrollToEl(document.getElementById('catalog')); }
+    else if (go === 'about') { closeAccount(); scrollToEl(document.getElementById('about')); }
+    else if (go === 'visit') { closeAccount(); var ss = document.querySelectorAll('main > div > section'); scrollToEl(ss[ss.length - 1]); }
+    else if (go === 'book') window.open('https://wa.me/' + WA + '?text=' + encodeURIComponent('Hi Mangal Shri, I would like to book an in-store styling appointment.'), '_blank');
+    else if (go === 'wa') window.open('https://wa.me/' + WA, '_blank');
+    else if (go === 'call') window.location.href = 'tel:8962331971';
+    else if (go === 'call2') window.location.href = 'tel:9926355200';
+    else if (go === 'mail') window.location.href = 'mailto:sambhavmangal844@gmail.com';
+    else if (go === 'reorder') {
+      var skipped = 0;
+      orders[parseInt(b.getAttribute('data-i'), 10)].items.forEach(function (it) {
+        var pr = byName[it.name];
+        if (!pr || !pr.inStock) { skipped++; return; }
+        var sz = pr.sizes.indexOf(it.size) > -1 ? it.size : pr.size;
+        for (var n = 0; n < it.qty; n++) {
+          var f = cart.filter(function (c) { return c.id === pr.name && c.size === sz; })[0];
+          if (f) f.qty++; else cart.push({ id: pr.name, size: sz, qty: 1 });
+        }
+      });
+      refresh(); openSheet('cart');
+      if (skipped) toast(skipped + ' item(s) no longer available');
+    }
+    else if (go === 'saveprofile') {
+      profile.name = document.getElementById('ms-name').value.trim();
+      profile.phone = document.getElementById('ms-phone').value.trim();
+      profile.email = document.getElementById('ms-email').value.trim();
+      try { localStorage.setItem('ms_profile', JSON.stringify(profile)); } catch (er) {}
+      toast('Profile saved'); acctView = 'home'; renderAccount();
+    }
+    else if (go === 'saveaddress') {
+      var ad2 = { line: document.getElementById('ms-a1').value.trim(), city: document.getElementById('ms-a2').value.trim(), pin: document.getElementById('ms-a3').value.trim() };
+      profile.address = ad2;
+      profile.addr = [ad2.line, ad2.city, ad2.pin].filter(Boolean).join(', ');
+      try { localStorage.setItem('ms_profile', JSON.stringify(profile)); } catch (er) {}
+      toast('Address saved'); acctView = 'home'; renderAccount();
+    }
+    else if (go === 'clear') {
+      if (window.confirm('This removes your details, orders, bag and wishlist from this phone. Continue?')) {
+        profile = {}; orders.splice(0); cart.splice(0); wishlist.splice(0);
+        try { localStorage.removeItem('ms_profile'); } catch (er) {}
+        save('ms_orders', orders); refresh(); renderAccount(); toast('Data cleared');
+      }
+    }
+  });
+
+  // ---------- Google Sheet: banner, settings, products ----------
+  function applySettings(s) {
+    var n = (s['whatsapp number'] || '').replace(/\D/g, '');
+    if (n.length === 10) n = '91' + n;
+    if (n.length >= 11 && n !== WA) {
+      document.querySelectorAll('a[href*="wa.me/' + WA + '"]').forEach(function (a) { a.setAttribute('href', a.getAttribute('href').split(WA).join(n)); });
+      WA = n;
+    }
+    if (s['instagram url']) {
+      var ig = s['instagram url'];
+      var handle = '@' + ig.replace(/[?#].*$/, '').replace(/\/+$/, '').split('/').pop();
+      document.querySelectorAll('a[href*="instagram.com"]').forEach(function (a) {
+        a.setAttribute('href', ig);
+        if (/^@/.test(a.textContent.trim())) a.textContent = handle;
+      });
+    }
+    if (s['maps url']) {
+      document.querySelectorAll('a[href*="maps.app.goo.gl"], a[href*="maps.google.com"]').forEach(function (a) { a.setAttribute('href', s['maps url']); });
+    }
+  }
+  function applyBanner(b) {
+    setText('topbar-text', b['top bar text']);
+    setText('hero-tag', b['hero tag']);
+    setText('hero-title', b['hero heading']);
+    setText('hero-text', b['hero text']);
+    setText('hero-btn', b['hero button text']);
+    var hi = fixImg(b['hero image url']);
+    if (hi) document.getElementById('hero-img').style.backgroundImage = 'url("' + hi + '")';
+
+    var sec = document.getElementById('sale-banner');
+    var show = isYes(b['sale banner show']);
+    var today = new Date(); today.setHours(0, 0, 0, 0);
+    var start = parseDate(b['sale start date']), end = parseDate(b['sale end date']);
+    if (end && today > end) show = false;
+    if (!b['sale banner title']) show = false;
+    sec.classList.toggle('hidden', !show);
+    if (!show) return;
+    setText('sale-tag', b['sale banner tag'] || 'Upcoming Sale');
+    setText('sale-title', b['sale banner title']);
+    document.getElementById('sale-text').textContent = b['sale banner text'] || '';
+    document.getElementById('sale-date').textContent = b['sale banner date'] || '';
+    var chip = document.getElementById('sale-chip'), label = '';
+    if (start && start > today) { var d = Math.round((start - today) / 86400000); label = d === 1 ? 'Starts tomorrow' : 'Starts in ' + d + ' days'; }
+    else if (start && start.getTime() === today.getTime()) label = 'Starts today';
+    else if (start && start < today) label = 'Sale is live';
+    chip.textContent = label; chip.style.display = label ? '' : 'none';
+    var img = fixImg(b['sale banner image url']);
+    document.getElementById('sale-img').style.backgroundImage = img ? 'url("' + img + '")' : 'none';
+    var btn = document.getElementById('sale-btn');
+    btn.textContent = b['sale banner button text'] || 'Know More';
+    btn.setAttribute('href', 'https://wa.me/' + WA + '?text=' + encodeURIComponent('Hi Mangal Shri, I would like to know about: ' + b['sale banner title']));
+  }
+  var DEBUG = /[?&]debug/.test(location.search) || location.protocol === 'file:';
+  function note(msg) {
+    if (!DEBUG) return;
+    var d = document.getElementById('ms-debug');
+    if (!d) {
+      d = document.createElement('div'); d.id = 'ms-debug';
+      d.style.cssText = 'position:fixed;top:0;left:0;right:0;z-index:9999;background:#111;color:#7CFC7C;font:12px/1.4 monospace;padding:8px;white-space:pre-wrap';
+      document.body.appendChild(d);
+    }
+    d.textContent += msg + '\n';
+  }
+  function fetchTab(tab) {
+    return fetch('https://docs.google.com/spreadsheets/d/' + SHEET_ID + '/gviz/tq?tqx=out:csv&sheet=' + encodeURIComponent(tab), { cache: 'no-store' })
+      .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.text(); })
+      .then(function (t) { var rows = parseCSV(t); note(tab + ': OK, ' + rows.length + ' rows'); return rows; })
+      .catch(function (err) { note(tab + ': FAILED (' + err.message + ')'); return null; });
+  }
+  function loadSheet() {
+    if (!SHEET_ID || /PASTE/i.test(SHEET_ID)) { note('No Sheet ID set in index.html'); return; }
+    note('Sheet ID: ' + SHEET_ID);
+    Promise.all([fetchTab('Settings'), fetchTab('Banner'), fetchTab('Products')]).then(function (r) {
+      if (r[0]) applySettings(toKV(r[0]));
+      if (r[1]) applyBanner(toKV(r[1]));
+      var list = r[2] ? toProducts(r[2]) : null;
+      if (r[2] && !list) note('Products: could not find the header row with "Name" and "Price"');
+      if (list) { note('Products shown on site: ' + list.length + ' (rows without a name or a numeric Price, or with Show = No, are skipped)'); setProducts(list); }
+      else if (r[0]) setProducts(products);
+      if (!r[0] && !r[1] && !r[2]) note('Nothing could be read. Check: sheet is a native Google Sheet and shared as Anyone with the link (Viewer).');
+    });
+  }
+
+  setProducts(DEFAULTS);
+  loadSheet();
+})();
+
+</script>
+</body></html>
